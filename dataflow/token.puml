@@ -1,0 +1,162 @@
+@startuml
+!define LIGHTBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+package bronze #D7CCC8 {
+    object token_info{
+        token_slug
+        chain
+        token_address
+        token_symbol
+        decimals
+        protocol_slug
+        erc20_slug
+        coin_gecko_slug
+    }
+    object chainlink_token_price_daily{
+        on_date
+        token_address
+        chain
+        token_symbol
+        price
+    }
+    object coingecko_token_price_daily{
+        on_date
+        coin_gecko_id
+        token_address
+        chain
+        token_symbol
+        price
+    }
+    object dex_token_price_daily{
+        on_date
+        token_address
+        chain
+        token_symbol
+        price
+    }
+    object "{chain}_token_transfers" as chain_token_transfers{
+        on_date
+        chain
+        from_address
+        to_address
+        token_address
+        value
+        transaction_hash
+    }
+    object special_token_address{
+        address
+        token_address
+        address_type
+    }
+}
+
+
+package silver #F5F5F5 {
+    object token_price_daily{
+        on_date
+        token_address
+        chain
+        token_symbol
+        decimals
+        price
+    }
+    object token_daily_stats_coin_gecko{
+        day
+        address
+        symbol
+        unique_symbol
+        name
+        coin_gecko_id
+        price
+        high_price_24h
+        low_price_24h
+        trading_vol_24h
+        circulating supply
+        facebook_likes
+        fully_diluted_valuation
+        market_cap
+        market_cap_rank
+        mcap_to_tvl_ratio
+        max_supply
+        total_supply
+        total_value_locked
+    }
+    object "{chain}_token_transfer_daily_stats" as chain_token_transfer_daily_stats{
+        on_date
+        chain
+        token_address
+        number_of_transactions
+        amount_raw
+        mint_amount_raw
+        burn_amount_raw
+        number_of_new_addresses
+        number_of_active_addresses
+    }
+    object special_token_address_indicators{
+        on_date
+        chain
+        token_address
+        mint_amount_raw
+        burn_amount_raw
+        liquidity_raw
+
+    }
+    object "{chain}_token_transfer_new_address" as chain_token_transfer_new_address{
+        on_date
+        chain
+        token_address
+        number_of_new_addresses
+    }
+
+}
+
+chain_token_transfers-->chain_token_transfer_new_address
+chainlink_token_price_daily-->token_price_daily
+coingecko_token_price_daily-->token_price_daily
+dex_token_price_daily-->token_price_daily
+chain_token_transfer_new_address -->chain_token_transfer_daily_stats
+special_token_address-->special_token_address_indicators
+chain_token_transfers-->special_token_address_indicators
+chain_token_transfers-->chain_token_transfer_daily_stats
+package gold #FFECB3 {
+    object token_daily_stats{
+        on_date
+        protocol_slug
+        token_slug
+        token_symbol
+        price
+        circulating supply
+        fully_diluted_supply
+        market_cap
+        max_supply
+        total_supply
+        trading_vol_24h
+    }
+
+    object token_chain_daily_stats{
+        on_date
+        chain
+        token_address
+        token_slug
+        protocol_slug
+        number_of_transactions
+        number_of_active_addresses
+        number_of_new_addresses
+        amount_raw
+        mint_amount_raw
+        burn_amount_raw
+        amount
+        mint_amount
+        burn_amount
+        liquidity
+    }
+}
+
+token_info-->token_daily_stats
+token_info-->token_chain_daily_stats
+token_price_daily -->token_daily_stats
+token_daily_stats_coin_gecko -->token_daily_stats
+chain_token_transfer_daily_stats-->token_chain_daily_stats
+special_token_address_indicators-->token_chain_daily_stats
+
+@enduml

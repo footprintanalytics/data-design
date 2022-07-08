@@ -1,0 +1,1578 @@
+Table "chain_info"."chain_info" {
+    "chain" string [note: 'the abbreviation of the chain ']
+    "chain_full_name" string [note: 'the chain of full_name']
+    "evm_chain_id" string [note: 'chain id']
+    Note {
+        'This table shows information of chain info.'
+    }
+}
+
+Table "chain_info"."chain_info_external_mapping" {
+    "chain" string [note: 'the abbreviation of the chain ']
+    "alias_chain" string [note: 'the alias name of chain in other platform']
+    "source" string [note: 'the alias chain match source']
+    Note {
+        'This table shows information of chain info external mapping.'
+    }
+}
+
+Table "chain_stats"."chain_stats" {
+    "block_date" date [note: 'The date of the aggregate.']
+    "chain" string [note: 'Which chain.']
+    "is_raw" boolean [note: 'Is Bronze raw data or not']
+    "daily_count" integer [note: 'Num of columns in the period']
+    "table_name" string [note: 'Which table name']
+    "period" string [note: 'The period of the aggregation.']
+    Note {
+        'Contain the stats of chain Bronze Data and Silver Transactions stats.'
+    }
+}
+
+Table "logs"."arbitrum_logs" {
+    "block_hash" string [note: 'Hash of the block where this log was in']
+    "block_number" integer [note: 'Block number where this log was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this log was in']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "data" string [note: 'Contains one or more 32 Bytes non-indexed arguments of the log']
+    "address" string [note: 'Address from which this log originated']
+    "topic1" string [note: 'Indexed log arguments (0 to 4 32-byte hex strings). (In solidity: The first topic is the hash of the signature of the event (e.g. Deposit(address,bytes32,uint256)), except you declared the event with the anonymous specifier.) always the function hash']
+    "topic2" string [note: 'The first indexed params in function']
+    "topic3" string [note: 'The second indexed params in function']
+    "topic4" string [note: 'The third indexed params in function']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "transaction_index" integer [note: 'The posicion of transaction in the blocks']
+    Note {
+        '''
+        This table is generally useful for reporting on any logged event type on the blockchain. 
+        If you want to use this table for analyse, you can ask discard https://discord.gg/KBzhwbVx 
+        for help to get a py environment. It will not work well in Footprint.
+        '''
+    }
+}
+
+Table "logs"."avalanche_logs" {
+    "block_hash" string [note: 'Hash of the block where this log was in']
+    "block_number" integer [note: 'Block number where this log was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this log was in']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "data" string [note: 'Contains one or more 32 Bytes non-indexed arguments of the log']
+    "address" string [note: 'Address from which this log originated']
+    "topic1" string [note: 'Indexed log arguments (0 to 4 32-byte hex strings). (In solidity: The first topic is the hash of the signature of the event (e.g. Deposit(address,bytes32,uint256)), except you declared the event with the anonymous specifier.) always the function hash']
+    "topic2" string [note: 'The first indexed params in function']
+    "topic3" string [note: 'The second indexed params in function']
+    "topic4" string [note: 'The third indexed params in function']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "transaction_index" integer [note: 'The posicion of transaction in the blocks']
+    Note {
+        '''
+        This table is generally useful for reporting on any logged event type on the blockchain. 
+        If you want to use this table for analyse, you can ask discard https://discord.gg/KBzhwbVx 
+        for help to get a py environment. It will not work well in Footprint.
+        '''
+    }
+}
+
+Table "logs"."bsc_logs" {
+    "block_hash" string [note: 'Hash of the block where this log was in']
+    "block_number" integer [note: 'Block number where this log was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this log was in']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "data" string [note: 'Contains one or more 32 Bytes non-indexed arguments of the log']
+    "address" string [note: 'Address from which this log originated']
+    "topic1" string [note: 'Indexed log arguments (0 to 4 32-byte hex strings). (In solidity: The first topic is the hash of the signature of the event (e.g. Deposit(address,bytes32,uint256)), except you declared the event with the anonymous specifier.) always the function hash']
+    "topic2" string [note: 'The first indexed params in function']
+    "topic3" string [note: 'The second indexed params in function']
+    "topic4" string [note: 'The third indexed params in function']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "transaction_index" integer [note: 'The posicion of transaction in the blocks']
+    Note {
+        '''
+        This table is generally useful for reporting on any logged event type on the blockchain. 
+        If you want to use this table for analyse, you can ask discard https://discord.gg/KBzhwbVx 
+        for help to get a py environment. It will not work well in Footprint.
+        '''
+    }
+}
+
+Table "logs"."ethereum_logs" {
+    "block_hash" string [note: 'Hash of the block where this log was in']
+    "block_number" integer [note: 'Block number where this log was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this log was in']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "data" string [note: 'Contains one or more 32 Bytes non-indexed arguments of the log']
+    "address" string [note: 'Address from which this log originated']
+    "topic1" string [note: 'Indexed log arguments (0 to 4 32-byte hex strings). (In solidity: The first topic is the hash of the signature of the event (e.g. Deposit(address,bytes32,uint256)), except you declared the event with the anonymous specifier.) always the function hash']
+    "topic2" string [note: 'The first indexed params in function']
+    "topic3" string [note: 'The second indexed params in function']
+    "topic4" string [note: 'The third indexed params in function']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "transaction_index" integer [note: 'The posicion of transaction in the blocks']
+    Note {
+        '''
+        This table is generally useful for reporting on any logged event type on the blockchain. 
+        If you want to use this table for analyse, you can ask discard https://discord.gg/KBzhwbVx 
+        for help to get a py environment. It will not work well in Footprint.
+        '''
+    }
+}
+
+Table "logs"."fantom_logs" {
+    "block_hash" string [note: 'Hash of the block where this log was in']
+    "block_number" integer [note: 'Block number where this log was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this log was in']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "data" string [note: 'Contains one or more 32 Bytes non-indexed arguments of the log']
+    "address" string [note: 'Address from which this log originated']
+    "topic1" string [note: 'Indexed log arguments (0 to 4 32-byte hex strings). (In solidity: The first topic is the hash of the signature of the event (e.g. Deposit(address,bytes32,uint256)), except you declared the event with the anonymous specifier.) always the function hash']
+    "topic2" string [note: 'The first indexed params in function']
+    "topic3" string [note: 'The second indexed params in function']
+    "topic4" string [note: 'The third indexed params in function']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "transaction_index" integer [note: 'The posicion of transaction in the blocks']
+    Note {
+        '''
+        This table is generally useful for reporting on any logged event type on the blockchain. 
+        If you want to use this table for analyse, you can ask discard https://discord.gg/KBzhwbVx 
+        for help to get a py environment. It will not work well in Footprint.
+        '''
+    }
+}
+
+Table "logs"."polygon_logs" {
+    "block_hash" string [note: 'Hash of the block where this log was in']
+    "block_number" integer [note: 'Block number where this log was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this log was in']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "data" string [note: 'Contains one or more 32 Bytes non-indexed arguments of the log']
+    "address" string [note: 'Address from which this log originated']
+    "topic1" string [note: 'Indexed log arguments (0 to 4 32-byte hex strings). (In solidity: The first topic is the hash of the signature of the event (e.g. Deposit(address,bytes32,uint256)), except you declared the event with the anonymous specifier.) always the function hash']
+    "topic2" string [note: 'The first indexed params in function']
+    "topic3" string [note: 'The second indexed params in function']
+    "topic4" string [note: 'The third indexed params in function']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "transaction_index" integer [note: 'The posicion of transaction in the blocks']
+    Note {
+        '''
+        This table is generally useful for reporting on any logged event type on the blockchain. 
+        If you want to use this table for analyse, you can ask discard https://discord.gg/KBzhwbVx 
+        for help to get a py environment. It will not work well in Footprint.
+        '''
+    }
+}
+
+Table "token_transfers"."arbitrum_token_transfers" {
+    "block_hash" string [note: 'Hash of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transfer was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "decimals" integer [note: 'The number of decimals the token uses.']
+    "token_address" string [note: 'token address']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "token_symbol" string [note: 'The symbol of the token']
+    "amount_raw" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "amount" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "value" float64 [note: 'USD value of the token']
+    "token_price" float64 [note: 'The current price of the token']
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."avalanche_token_transfers" {
+    "block_hash" string [note: 'Hash of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transfer was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "decimals" integer [note: 'The number of decimals the token uses.']
+    "token_address" string [note: 'token address']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "token_symbol" string [note: 'The symbol of the token']
+    "amount_raw" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "amount" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "value" float64 [note: 'USD value of the token']
+    "token_price" float64 [note: 'The current price of the token']
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."boba_token_transfers" {
+    "block_hash" string [note: 'Hash of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transfer was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "decimals" integer [note: 'The number of decimals the token uses.']
+    "token_address" string [note: 'token address']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "token_symbol" string [note: 'The symbol of the token']
+    "amount_raw" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "amount" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "value" float64 [note: 'USD value of the token']
+    "token_price" float64 [note: 'The current price of the token']
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."bsc_token_transfers" {
+    "block_hash" string [note: 'Hash of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transfer was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "decimals" integer [note: 'The number of decimals the token uses.']
+    "token_address" string [note: 'token address']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "token_symbol" string [note: 'The symbol of the token']
+    "amount_raw" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "amount" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "value" float64 [note: 'USD value of the token']
+    "token_price" float64 [note: 'The current price of the token']
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."celo_token_transfers" {
+    "block_hash" string [note: 'Hash of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transfer was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "decimals" integer [note: 'The number of decimals the token uses.']
+    "token_address" string [note: 'token address']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "token_symbol" string [note: 'The symbol of the token']
+    "amount_raw" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "amount" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "value" float64 [note: 'USD value of the token']
+    "token_price" float64 [note: 'The current price of the token']
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."dfk_token_transfers" {
+    "block_hash" string [note: 'Hash of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transfer was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "decimals" integer [note: 'The number of decimals the token uses.']
+    "token_address" string [note: 'token address']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "token_symbol" string [note: 'The symbol of the token']
+    "amount_raw" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "amount" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "value" float64 [note: 'USD value of the token']
+    "token_price" float64 [note: 'The current price of the token']
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."ethereum_token_transfers" {
+    "block_hash" string [note: 'Hash of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transfer was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "decimals" integer [note: 'The number of decimals the token uses.']
+    "token_address" string [note: 'token address']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "token_symbol" string [note: 'The symbol of the token']
+    "amount_raw" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "amount" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "value" float64 [note: 'USD value of the token']
+    "token_price" float64 [note: 'The current price of the token']
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."fantom_token_transfers" {
+    "block_hash" string [note: 'Hash of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transfer was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "decimals" integer [note: 'The number of decimals the token uses.']
+    "token_address" string [note: 'token address']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "token_symbol" string [note: 'The symbol of the token']
+    "amount_raw" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "amount" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "value" float64 [note: 'USD value of the token']
+    "token_price" float64 [note: 'The current price of the token']
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."harmony_token_transfers" {
+    "block_hash" string [note: 'Hash of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transfer was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "decimals" integer [note: 'The number of decimals the token uses.']
+    "token_address" string [note: 'token address']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "token_symbol" string [note: 'The symbol of the token']
+    "amount_raw" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "amount" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "value" float64 [note: 'USD value of the token']
+    "token_price" float64 [note: 'The current price of the token']
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."hsc_token_transfers" {
+    "block_hash" string [note: 'Hash of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transfer was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "decimals" integer [note: 'The number of decimals the token uses.']
+    "token_address" string [note: 'token address']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "token_symbol" string [note: 'The symbol of the token']
+    "amount_raw" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "amount" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "value" float64 [note: 'USD value of the token']
+    "token_price" float64 [note: 'The current price of the token']
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."moonbeam_token_transfers" {
+    "block_hash" string [note: 'Hash of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transfer was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "decimals" integer [note: 'The number of decimals the token uses.']
+    "token_address" string [note: 'token address']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "token_symbol" string [note: 'The symbol of the token']
+    "amount_raw" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "amount" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "value" float64 [note: 'USD value of the token']
+    "token_price" float64 [note: 'The current price of the token']
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."moonriver_token_transfers" {
+    "block_hash" string [note: 'Hash of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transfer was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "decimals" integer [note: 'The number of decimals the token uses.']
+    "token_address" string [note: 'token address']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "token_symbol" string [note: 'The symbol of the token']
+    "amount_raw" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "amount" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "value" float64 [note: 'USD value of the token']
+    "token_price" float64 [note: 'The current price of the token']
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."polygon_token_transfers" {
+    "block_hash" string [note: 'Hash of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transfer was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "decimals" integer [note: 'The number of decimals the token uses.']
+    "token_address" string [note: 'token address']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "token_symbol" string [note: 'The symbol of the token']
+    "amount_raw" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "amount" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "value" float64 [note: 'USD value of the token']
+    "token_price" float64 [note: 'The current price of the token']
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."thunder_core_token_transfers" {
+    "block_hash" string [note: 'Hash of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transfer was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "decimals" integer [note: 'The number of decimals the token uses.']
+    "token_address" string [note: 'token address']
+    "transaction_hash" string [note: 'The hash of the transaction']
+    "token_symbol" string [note: 'The symbol of the token']
+    "amount_raw" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "amount" float64 [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "value" float64 [note: 'USD value of the token']
+    "token_price" float64 [note: 'The current price of the token']
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."bsc_erc1155_token_transfers" {
+    "block_timestamp" date [note: 'Timestamp of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "transaction_hash" string [note: 'The hash of transaction']
+    "log_index" string [note: 'Log index in the transaction receipt']
+    "token_address" string [note: 'token address']
+    "operator" string [note: 'transfer operator']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "id" string [note: 'transfer token id']
+    "amount_raw" float64 [note: 'amount of token transferred']
+    "internal_index" string
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."ethereum_erc1155_token_transfers" {
+    "block_timestamp" date [note: 'Timestamp of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "transaction_hash" string [note: 'The hash of transaction']
+    "log_index" string [note: 'Log index in the transaction receipt']
+    "token_address" string [note: 'token address']
+    "operator" string [note: 'transfer operator']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "id" string [note: 'transfer token id']
+    "amount_raw" float64 [note: 'amount of token transferred']
+    "internal_index" string
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."polygon_erc1155_token_transfers" {
+    "block_timestamp" date [note: 'Timestamp of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "transaction_hash" string [note: 'The hash of transaction']
+    "log_index" string [note: 'Log index in the transaction receipt']
+    "token_address" string [note: 'token address']
+    "operator" string [note: 'transfer operator']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "id" string [note: 'transfer token id']
+    "amount_raw" float64 [note: 'amount of token transferred']
+    "internal_index" string
+    Note {
+        '''
+        Contains the subset of token_transfer event's transactions and has further processed 
+        and denormalized the data to make it easier to consume for analysis of token transfer 
+        events.
+        '''
+    }
+}
+
+Table "token_transfers"."bsc_erc721_token_transfers" {
+    "block_timestamp" timestamp [note: 'timestamp of the block']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "transaction_hash" string [note: 'transaction hash']
+    "log_index" integer [note: 'log index of transaction hash']
+    "token_address" string [note: 'token address']
+    "from_address" string [note: 'address of the sender']
+    "to_address" string [note: 'address of the receiver']
+    "id" string [note: 'id of the token transferred (NFT)']
+    "amount_raw" float [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "internal_index" string [note: 'log index of transaction hash']
+    Note {
+        '''
+        Filter out the ERC721 contract address of the chain according to the nft_contract_info 
+        table under the token transfers event.
+        '''
+    }
+}
+
+Table "token_transfers"."ethereum_erc721_token_transfers" {
+    "block_timestamp" timestamp [note: 'timestamp of the block']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "transaction_hash" string [note: 'transaction hash']
+    "log_index" integer [note: 'log index of transaction hash']
+    "token_address" string [note: 'token address']
+    "from_address" string [note: 'address of the sender']
+    "to_address" string [note: 'address of the receiver']
+    "id" string [note: 'id of the token transferred (NFT)']
+    "amount_raw" float [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "internal_index" string [note: 'log index of transaction hash']
+    Note {
+        '''
+        Filter out the ERC721 contract address of the chain according to the nft_contract_info 
+        table under the token transfers event.
+        '''
+    }
+}
+
+Table "token_transfers"."polygon_erc721_token_transfers" {
+    "block_timestamp" timestamp [note: 'timestamp of the block']
+    "block_number" integer [note: 'Block number where this transfer was in']
+    "transaction_hash" string [note: 'transaction hash']
+    "log_index" integer [note: 'log index of transaction hash']
+    "token_address" string [note: 'token address']
+    "from_address" string [note: 'address of the sender']
+    "to_address" string [note: 'address of the receiver']
+    "id" string [note: 'id of the token transferred (NFT)']
+    "amount_raw" float [note: 'Amount of tokens transferred / id of the token transferred (NFT)']
+    "internal_index" string [note: 'log index of transaction hash']
+    Note {
+        '''
+        Filter out the ERC721 contract address of the chain according to the nft_contract_info 
+        table under the token transfers event.
+        '''
+    }
+}
+
+Table "transactions"."arbitrum_transactions" {
+    "hash" string [note: 'Hash of the transaction']
+    "nonce" integer [note: 'The number of transactions made by the sender prior to this one']
+    "transaction_index" integer [note: 'Integer of the transactions index position in the block']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver.']
+    "value" float64 [note: 'Value transferred']
+    "type" string [note: 'only transfer or other']
+    "gas" integer [note: 'Gas provided by the sender']
+    "gas_price" float64 [note: 'Gas price provided by the sender']
+    "receipt_cumulative_gas_used" float64 [note: 'The total amount of gas used when this transaction was executed in the block']
+    "receipt_gas_used" float64 [note: 'The amount of gas used by this specific transaction alone']
+    "receipt_contract_address" string [note: 'The contract address created, if the transaction was a contract creation, otherwise null']
+    "receipt_root" string [note: '32 bytes of post-transaction stateroot']
+    "receipt_status" integer [note: '1 (success) or 0 (failure)']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transaction was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transaction was in']
+    "block_hash" string [note: 'Hash of the block where this transaction was in']
+    "max_fee_per_gas" float64 [note: 'Total fee that covers both base and priority fees']
+    "max_priority_fee_per_gas" integer [note: 'Fee given to miners to incentivize them to include the transaction']
+    "transaction_type" integer [note: 'Transaction type']
+    "receipt_effective_gas_price" float64 [note: 'The actual value per gas deducted from the senders account.']
+    "base_fee_per_gas" integer [note: 'Protocol base fee per gas in block, which can move up or down']
+    Note {
+        '''
+        This table contains a set of all transactions from all blocks, and contains a block 
+        identifier to get associated block-specific information associated with each transaction.
+        '''
+    }
+}
+
+Table "transactions"."avalanche_transactions" {
+    "hash" string [note: 'Hash of the transaction']
+    "nonce" integer [note: 'The number of transactions made by the sender prior to this one']
+    "transaction_index" integer [note: 'Integer of the transactions index position in the block']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver.']
+    "value" float64 [note: 'Value transferred']
+    "type" string [note: 'only transfer or other']
+    "gas" integer [note: 'Gas provided by the sender']
+    "gas_price" float64 [note: 'Gas price provided by the sender']
+    "receipt_cumulative_gas_used" float64 [note: 'The total amount of gas used when this transaction was executed in the block']
+    "receipt_gas_used" float64 [note: 'The amount of gas used by this specific transaction alone']
+    "receipt_contract_address" string [note: 'The contract address created, if the transaction was a contract creation, otherwise null']
+    "receipt_root" string [note: '32 bytes of post-transaction stateroot']
+    "receipt_status" integer [note: '1 (success) or 0 (failure)']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transaction was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transaction was in']
+    "block_hash" string [note: 'Hash of the block where this transaction was in']
+    "max_fee_per_gas" float64 [note: 'Total fee that covers both base and priority fees']
+    "max_priority_fee_per_gas" integer [note: 'Fee given to miners to incentivize them to include the transaction']
+    "transaction_type" integer [note: 'Transaction type']
+    "receipt_effective_gas_price" float64 [note: 'The actual value per gas deducted from the senders account.']
+    "base_fee_per_gas" integer [note: 'Protocol base fee per gas in block, which can move up or down']
+    Note {
+        '''
+        This table contains a set of all transactions from all blocks, and contains a block 
+        identifier to get associated block-specific information associated with each transaction.
+        '''
+    }
+}
+
+Table "transactions"."boba_transactions" {
+    "hash" string [note: 'Hash of the transaction']
+    "nonce" integer [note: 'The number of transactions made by the sender prior to this one']
+    "transaction_index" integer [note: 'Integer of the transactions index position in the block']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver.']
+    "value" float64 [note: 'Value transferred']
+    "type" string [note: 'only transfer or other']
+    "gas" integer [note: 'Gas provided by the sender']
+    "gas_price" float64 [note: 'Gas price provided by the sender']
+    "receipt_cumulative_gas_used" float64 [note: 'The total amount of gas used when this transaction was executed in the block']
+    "receipt_gas_used" float64 [note: 'The amount of gas used by this specific transaction alone']
+    "receipt_contract_address" string [note: 'The contract address created, if the transaction was a contract creation, otherwise null']
+    "receipt_root" string [note: '32 bytes of post-transaction stateroot']
+    "receipt_status" integer [note: '1 (success) or 0 (failure)']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transaction was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transaction was in']
+    "block_hash" string [note: 'Hash of the block where this transaction was in']
+    "max_fee_per_gas" float64 [note: 'Total fee that covers both base and priority fees']
+    "max_priority_fee_per_gas" integer [note: 'Fee given to miners to incentivize them to include the transaction']
+    "transaction_type" integer [note: 'Transaction type']
+    "receipt_effective_gas_price" float64 [note: 'The actual value per gas deducted from the senders account.']
+    "base_fee_per_gas" integer [note: 'Protocol base fee per gas in block, which can move up or down']
+    Note {
+        '''
+        This table contains a set of all transactions from all blocks, and contains a block 
+        identifier to get associated block-specific information associated with each transaction.
+        '''
+    }
+}
+
+Table "transactions"."bsc_transactions" {
+    "hash" string [note: 'Hash of the transaction']
+    "nonce" integer [note: 'The number of transactions made by the sender prior to this one']
+    "transaction_index" integer [note: 'Integer of the transactions index position in the block']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver.']
+    "value" float64 [note: 'Value transferred']
+    "type" string [note: 'only transfer or other']
+    "gas" integer [note: 'Gas provided by the sender']
+    "gas_price" float64 [note: 'Gas price provided by the sender']
+    "receipt_cumulative_gas_used" float64 [note: 'The total amount of gas used when this transaction was executed in the block']
+    "receipt_gas_used" float64 [note: 'The amount of gas used by this specific transaction alone']
+    "receipt_contract_address" string [note: 'The contract address created, if the transaction was a contract creation, otherwise null']
+    "receipt_root" string [note: '32 bytes of post-transaction stateroot']
+    "receipt_status" integer [note: '1 (success) or 0 (failure)']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transaction was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transaction was in']
+    "block_hash" string [note: 'Hash of the block where this transaction was in']
+    "max_fee_per_gas" float64 [note: 'Total fee that covers both base and priority fees']
+    "max_priority_fee_per_gas" integer [note: 'Fee given to miners to incentivize them to include the transaction']
+    "transaction_type" integer [note: 'Transaction type']
+    "receipt_effective_gas_price" float64 [note: 'The actual value per gas deducted from the senders account.']
+    "base_fee_per_gas" integer [note: 'Protocol base fee per gas in block, which can move up or down']
+    Note {
+        '''
+        This table contains a set of all transactions from all blocks, and contains a block 
+        identifier to get associated block-specific information associated with each transaction.
+        '''
+    }
+}
+
+Table "transactions"."celo_transactions" {
+    "hash" string [note: 'Hash of the transaction']
+    "nonce" integer [note: 'The number of transactions made by the sender prior to this one']
+    "transaction_index" integer [note: 'Integer of the transactions index position in the block']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver.']
+    "value" float64 [note: 'Value transferred']
+    "type" string [note: 'only transfer or other']
+    "gas" integer [note: 'Gas provided by the sender']
+    "gas_price" float64 [note: 'Gas price provided by the sender']
+    "receipt_cumulative_gas_used" float64 [note: 'The total amount of gas used when this transaction was executed in the block']
+    "receipt_gas_used" float64 [note: 'The amount of gas used by this specific transaction alone']
+    "receipt_contract_address" string [note: 'The contract address created, if the transaction was a contract creation, otherwise null']
+    "receipt_root" string [note: '32 bytes of post-transaction stateroot']
+    "receipt_status" integer [note: '1 (success) or 0 (failure)']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transaction was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transaction was in']
+    "block_hash" string [note: 'Hash of the block where this transaction was in']
+    "max_fee_per_gas" float64 [note: 'Total fee that covers both base and priority fees']
+    "max_priority_fee_per_gas" integer [note: 'Fee given to miners to incentivize them to include the transaction']
+    "transaction_type" integer [note: 'Transaction type']
+    "receipt_effective_gas_price" float64 [note: 'The actual value per gas deducted from the senders account.']
+    "base_fee_per_gas" integer [note: 'Protocol base fee per gas in block, which can move up or down']
+    Note {
+        '''
+        This table contains a set of all transactions from all blocks, and contains a block 
+        identifier to get associated block-specific information associated with each transaction.
+        '''
+    }
+}
+
+Table "transactions"."dfk_transactions" {
+    "hash" string [note: 'Hash of the transaction']
+    "nonce" integer [note: 'The number of transactions made by the sender prior to this one']
+    "transaction_index" integer [note: 'Integer of the transactions index position in the block']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver.']
+    "value" float64 [note: 'Value transferred']
+    "type" string [note: 'only transfer or other']
+    "gas" integer [note: 'Gas provided by the sender']
+    "gas_price" float64 [note: 'Gas price provided by the sender']
+    "receipt_cumulative_gas_used" float64 [note: 'The total amount of gas used when this transaction was executed in the block']
+    "receipt_gas_used" float64 [note: 'The amount of gas used by this specific transaction alone']
+    "receipt_contract_address" string [note: 'The contract address created, if the transaction was a contract creation, otherwise null']
+    "receipt_root" string [note: '32 bytes of post-transaction stateroot']
+    "receipt_status" integer [note: '1 (success) or 0 (failure)']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transaction was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transaction was in']
+    "block_hash" string [note: 'Hash of the block where this transaction was in']
+    "max_fee_per_gas" float64 [note: 'Total fee that covers both base and priority fees']
+    "max_priority_fee_per_gas" integer [note: 'Fee given to miners to incentivize them to include the transaction']
+    "transaction_type" integer [note: 'Transaction type']
+    "receipt_effective_gas_price" float64 [note: 'The actual value per gas deducted from the senders account.']
+    "base_fee_per_gas" integer [note: 'Protocol base fee per gas in block, which can move up or down']
+    Note {
+        '''
+        This table contains a set of all transactions from all blocks, and contains a block 
+        identifier to get associated block-specific information associated with each transaction.
+        '''
+    }
+}
+
+Table "transactions"."ethereum_transactions" {
+    "hash" string [note: 'Hash of the transaction']
+    "nonce" integer [note: 'The number of transactions made by the sender prior to this one']
+    "transaction_index" integer [note: 'Integer of the transactions index position in the block']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver.']
+    "value" float64 [note: 'Value transferred']
+    "type" string [note: 'only transfer or other']
+    "gas" integer [note: 'Gas provided by the sender']
+    "gas_price" float64 [note: 'Gas price provided by the sender']
+    "receipt_cumulative_gas_used" float64 [note: 'The total amount of gas used when this transaction was executed in the block']
+    "receipt_gas_used" float64 [note: 'The amount of gas used by this specific transaction alone']
+    "receipt_contract_address" string [note: 'The contract address created, if the transaction was a contract creation, otherwise null']
+    "receipt_root" string [note: '32 bytes of post-transaction stateroot']
+    "receipt_status" integer [note: '1 (success) or 0 (failure)']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transaction was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transaction was in']
+    "block_hash" string [note: 'Hash of the block where this transaction was in']
+    "max_fee_per_gas" float64 [note: 'Total fee that covers both base and priority fees']
+    "max_priority_fee_per_gas" integer [note: 'Fee given to miners to incentivize them to include the transaction']
+    "transaction_type" integer [note: 'Transaction type']
+    "receipt_effective_gas_price" float64 [note: 'The actual value per gas deducted from the senders account.']
+    "base_fee_per_gas" integer [note: 'Protocol base fee per gas in block, which can move up or down']
+    Note {
+        '''
+        This table contains a set of all transactions from all blocks, and contains a block 
+        identifier to get associated block-specific information associated with each transaction.
+        '''
+    }
+}
+
+Table "transactions"."fantom_transactions" {
+    "hash" string [note: 'Hash of the transaction']
+    "nonce" integer [note: 'The number of transactions made by the sender prior to this one']
+    "transaction_index" integer [note: 'Integer of the transactions index position in the block']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver.']
+    "value" float64 [note: 'Value transferred']
+    "type" string [note: 'only transfer or other']
+    "gas" integer [note: 'Gas provided by the sender']
+    "gas_price" float64 [note: 'Gas price provided by the sender']
+    "receipt_cumulative_gas_used" float64 [note: 'The total amount of gas used when this transaction was executed in the block']
+    "receipt_gas_used" float64 [note: 'The amount of gas used by this specific transaction alone']
+    "receipt_contract_address" string [note: 'The contract address created, if the transaction was a contract creation, otherwise null']
+    "receipt_root" string [note: '32 bytes of post-transaction stateroot']
+    "receipt_status" integer [note: '1 (success) or 0 (failure)']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transaction was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transaction was in']
+    "block_hash" string [note: 'Hash of the block where this transaction was in']
+    "max_fee_per_gas" float64 [note: 'Total fee that covers both base and priority fees']
+    "max_priority_fee_per_gas" integer [note: 'Fee given to miners to incentivize them to include the transaction']
+    "transaction_type" integer [note: 'Transaction type']
+    "receipt_effective_gas_price" float64 [note: 'The actual value per gas deducted from the senders account.']
+    "base_fee_per_gas" integer [note: 'Protocol base fee per gas in block, which can move up or down']
+    Note {
+        '''
+        This table contains a set of all transactions from all blocks, and contains a block 
+        identifier to get associated block-specific information associated with each transaction.
+        '''
+    }
+}
+
+Table "transactions"."harmony_transactions" {
+    "hash" string [note: 'Hash of the transaction']
+    "nonce" integer [note: 'The number of transactions made by the sender prior to this one']
+    "transaction_index" integer [note: 'Integer of the transactions index position in the block']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver.']
+    "value" float64 [note: 'Value transferred']
+    "type" string [note: 'only transfer or other']
+    "gas" integer [note: 'Gas provided by the sender']
+    "gas_price" float64 [note: 'Gas price provided by the sender']
+    "receipt_cumulative_gas_used" float64 [note: 'The total amount of gas used when this transaction was executed in the block']
+    "receipt_gas_used" float64 [note: 'The amount of gas used by this specific transaction alone']
+    "receipt_contract_address" string [note: 'The contract address created, if the transaction was a contract creation, otherwise null']
+    "receipt_root" string [note: '32 bytes of post-transaction stateroot']
+    "receipt_status" integer [note: '1 (success) or 0 (failure)']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transaction was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transaction was in']
+    "block_hash" string [note: 'Hash of the block where this transaction was in']
+    "max_fee_per_gas" float64 [note: 'Total fee that covers both base and priority fees']
+    "max_priority_fee_per_gas" integer [note: 'Fee given to miners to incentivize them to include the transaction']
+    "transaction_type" integer [note: 'Transaction type']
+    "receipt_effective_gas_price" float64 [note: 'The actual value per gas deducted from the senders account.']
+    "base_fee_per_gas" integer [note: 'Protocol base fee per gas in block, which can move up or down']
+    Note {
+        '''
+        This table contains a set of all transactions from all blocks, and contains a block 
+        identifier to get associated block-specific information associated with each transaction.
+        '''
+    }
+}
+
+Table "transactions"."hsc_transactions" {
+    "hash" string [note: 'Hash of the transaction']
+    "nonce" integer [note: 'The number of transactions made by the sender prior to this one']
+    "transaction_index" integer [note: 'Integer of the transactions index position in the block']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver.']
+    "value" float64 [note: 'Value transferred']
+    "type" string [note: 'only transfer or other']
+    "gas" integer [note: 'Gas provided by the sender']
+    "gas_price" float64 [note: 'Gas price provided by the sender']
+    "receipt_cumulative_gas_used" float64 [note: 'The total amount of gas used when this transaction was executed in the block']
+    "receipt_gas_used" float64 [note: 'The amount of gas used by this specific transaction alone']
+    "receipt_contract_address" string [note: 'The contract address created, if the transaction was a contract creation, otherwise null']
+    "receipt_root" string [note: '32 bytes of post-transaction stateroot']
+    "receipt_status" integer [note: '1 (success) or 0 (failure)']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transaction was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transaction was in']
+    "block_hash" string [note: 'Hash of the block where this transaction was in']
+    "max_fee_per_gas" float64 [note: 'Total fee that covers both base and priority fees']
+    "max_priority_fee_per_gas" integer [note: 'Fee given to miners to incentivize them to include the transaction']
+    "transaction_type" integer [note: 'Transaction type']
+    "receipt_effective_gas_price" float64 [note: 'The actual value per gas deducted from the senders account.']
+    "base_fee_per_gas" integer [note: 'Protocol base fee per gas in block, which can move up or down']
+    Note {
+        '''
+        This table contains a set of all transactions from all blocks, and contains a block 
+        identifier to get associated block-specific information associated with each transaction.
+        '''
+    }
+}
+
+Table "transactions"."moonbeam_transactions" {
+    "hash" string [note: 'Hash of the transaction']
+    "nonce" integer [note: 'The number of transactions made by the sender prior to this one']
+    "transaction_index" integer [note: 'Integer of the transactions index position in the block']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver.']
+    "value" float64 [note: 'Value transferred']
+    "type" string [note: 'only transfer or other']
+    "gas" integer [note: 'Gas provided by the sender']
+    "gas_price" float64 [note: 'Gas price provided by the sender']
+    "receipt_cumulative_gas_used" float64 [note: 'The total amount of gas used when this transaction was executed in the block']
+    "receipt_gas_used" float64 [note: 'The amount of gas used by this specific transaction alone']
+    "receipt_contract_address" string [note: 'The contract address created, if the transaction was a contract creation, otherwise null']
+    "receipt_root" string [note: '32 bytes of post-transaction stateroot']
+    "receipt_status" integer [note: '1 (success) or 0 (failure)']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transaction was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transaction was in']
+    "block_hash" string [note: 'Hash of the block where this transaction was in']
+    "max_fee_per_gas" float64 [note: 'Total fee that covers both base and priority fees']
+    "max_priority_fee_per_gas" integer [note: 'Fee given to miners to incentivize them to include the transaction']
+    "transaction_type" integer [note: 'Transaction type']
+    "receipt_effective_gas_price" float64 [note: 'The actual value per gas deducted from the senders account.']
+    "base_fee_per_gas" integer [note: 'Protocol base fee per gas in block, which can move up or down']
+    Note {
+        '''
+        This table contains a set of all transactions from all blocks, and contains a block 
+        identifier to get associated block-specific information associated with each transaction.
+        '''
+    }
+}
+
+Table "transactions"."moonriver_transactions" {
+    "hash" string [note: 'Hash of the transaction']
+    "nonce" integer [note: 'The number of transactions made by the sender prior to this one']
+    "transaction_index" integer [note: 'Integer of the transactions index position in the block']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver.']
+    "value" float64 [note: 'Value transferred']
+    "type" string [note: 'only transfer or other']
+    "gas" integer [note: 'Gas provided by the sender']
+    "gas_price" float64 [note: 'Gas price provided by the sender']
+    "receipt_cumulative_gas_used" float64 [note: 'The total amount of gas used when this transaction was executed in the block']
+    "receipt_gas_used" float64 [note: 'The amount of gas used by this specific transaction alone']
+    "receipt_contract_address" string [note: 'The contract address created, if the transaction was a contract creation, otherwise null']
+    "receipt_root" string [note: '32 bytes of post-transaction stateroot']
+    "receipt_status" integer [note: '1 (success) or 0 (failure)']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transaction was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transaction was in']
+    "block_hash" string [note: 'Hash of the block where this transaction was in']
+    "max_fee_per_gas" float64 [note: 'Total fee that covers both base and priority fees']
+    "max_priority_fee_per_gas" integer [note: 'Fee given to miners to incentivize them to include the transaction']
+    "transaction_type" integer [note: 'Transaction type']
+    "receipt_effective_gas_price" float64 [note: 'The actual value per gas deducted from the senders account.']
+    "base_fee_per_gas" integer [note: 'Protocol base fee per gas in block, which can move up or down']
+    Note {
+        '''
+        This table contains a set of all transactions from all blocks, and contains a block 
+        identifier to get associated block-specific information associated with each transaction.
+        '''
+    }
+}
+
+Table "transactions"."polygon_transactions" {
+    "hash" string [note: 'Hash of the transaction']
+    "nonce" integer [note: 'The number of transactions made by the sender prior to this one']
+    "transaction_index" integer [note: 'Integer of the transactions index position in the block']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver.']
+    "value" float64 [note: 'Value transferred']
+    "type" string [note: 'only transfer or other']
+    "gas" integer [note: 'Gas provided by the sender']
+    "gas_price" float64 [note: 'Gas price provided by the sender']
+    "receipt_cumulative_gas_used" float64 [note: 'The total amount of gas used when this transaction was executed in the block']
+    "receipt_gas_used" float64 [note: 'The amount of gas used by this specific transaction alone']
+    "receipt_contract_address" string [note: 'The contract address created, if the transaction was a contract creation, otherwise null']
+    "receipt_root" string [note: '32 bytes of post-transaction stateroot']
+    "receipt_status" integer [note: '1 (success) or 0 (failure)']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transaction was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transaction was in']
+    "block_hash" string [note: 'Hash of the block where this transaction was in']
+    "max_fee_per_gas" float64 [note: 'Total fee that covers both base and priority fees']
+    "max_priority_fee_per_gas" integer [note: 'Fee given to miners to incentivize them to include the transaction']
+    "transaction_type" integer [note: 'Transaction type']
+    "receipt_effective_gas_price" float64 [note: 'The actual value per gas deducted from the senders account.']
+    "base_fee_per_gas" integer [note: 'Protocol base fee per gas in block, which can move up or down']
+    Note {
+        '''
+        This table contains a set of all transactions from all blocks, and contains a block 
+        identifier to get associated block-specific information associated with each transaction.
+        '''
+    }
+}
+
+Table "transactions"."thunder_core_transactions" {
+    "hash" string [note: 'Hash of the transaction']
+    "nonce" integer [note: 'The number of transactions made by the sender prior to this one']
+    "transaction_index" integer [note: 'Integer of the transactions index position in the block']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver.']
+    "value" float64 [note: 'Value transferred']
+    "type" string [note: 'only transfer or other']
+    "gas" integer [note: 'Gas provided by the sender']
+    "gas_price" float64 [note: 'Gas price provided by the sender']
+    "receipt_cumulative_gas_used" float64 [note: 'The total amount of gas used when this transaction was executed in the block']
+    "receipt_gas_used" float64 [note: 'The amount of gas used by this specific transaction alone']
+    "receipt_contract_address" string [note: 'The contract address created, if the transaction was a contract creation, otherwise null']
+    "receipt_root" string [note: '32 bytes of post-transaction stateroot']
+    "receipt_status" integer [note: '1 (success) or 0 (failure)']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transaction was in']
+    "block_date" date [note: 'Date of the block where this transfer was in']
+    "block_number" integer [note: 'Block number where this transaction was in']
+    "block_hash" string [note: 'Hash of the block where this transaction was in']
+    "max_fee_per_gas" float64 [note: 'Total fee that covers both base and priority fees']
+    "max_priority_fee_per_gas" integer [note: 'Fee given to miners to incentivize them to include the transaction']
+    "transaction_type" integer [note: 'Transaction type']
+    "receipt_effective_gas_price" float64 [note: 'The actual value per gas deducted from the senders account.']
+    "base_fee_per_gas" integer [note: 'Protocol base fee per gas in block, which can move up or down']
+    Note {
+        '''
+        This table contains a set of all transactions from all blocks, and contains a block 
+        identifier to get associated block-specific information associated with each transaction.
+        '''
+    }
+}
+
+Table "contract_info"."contract_info" {
+    "protocol_slug" string [note: 'protocol name']
+    "contract_address" string [note: 'contract address']
+    "chain" string [note: 'the chain to which the contract belongs']
+    Note {
+        'This table shows information for contract'
+    }
+}
+
+Table "defi"."defi_protocol_daily_stats" {
+    "on_date" timestamp [note: 'the statistical date']
+    "protocol_slug" string [note: 'abbreviation of the protocol']
+    "protocol_name" string [note: 'the protocol name']
+    "chain" string [note: 'the chain of the protocol']
+    "tvl" float [note: 'the capital deposited into the platform in the form of loan collateral or liquidity trading pool']
+    "volume" float [note: 'cryptocurrency trading volume across all tracked platforms']
+    "turnover_tvl" float [note: 'tvl turnover']
+    "volume_7d_summary" float [note: 'summary of volume in recent 7 days']
+    "tvl_7d_avg" float [note: 'average of TVL in recent 7 days']
+    Note {
+        '''
+        This table can be used to analyze the daily indicators (include tvl,volume,etc ) 
+        of different defi platforms.
+        '''
+    }
+}
+
+Table "dex_cashflow"."bsc_liquidity_cashflow" {
+    "uuid" string
+    "block_date" date
+    "block_timestamp" timestamp
+    "block_number" int64
+    "transaction_hash" string
+    "type" string
+    "contract_address" string
+    "operator" string
+    "pool_name" string
+    "token_0_symbol" string
+    "token_0_amount" float64
+    "token_0_amount_raw" float64
+    "token_0_address" string
+    "token_0_value" float64
+    "token_1_symbol" string
+    "token_1_amount" float64
+    "token_1_amount_raw" float64
+    "token_1_address" string
+    "token_1_value" float64
+}
+
+Table "dex_cashflow"."bsc_swap_cashflow" {
+    "uuid" string
+    "block_date" date
+    "block_timestamp" timestamp
+    "block_number" int64
+    "transaction_hash" string
+    "contract_address" string
+    "operator" string
+    "pool_name" string
+    "token_0_symbol" string
+    "token_0_amount" float64
+    "token_0_amount_raw" float64
+    "token_0_address" string
+    "token_0_value" float64
+    "token_1_symbol" string
+    "token_1_amount" float64
+    "token_1_amount_raw" float64
+    "token_1_address" string
+    "token_1_value" float64
+}
+
+Table "dex_cashflow"."solana_liquidity_cashflow" {
+    "uuid" string
+    "block_date" date
+    "block_timestamp" timestamp
+    "block_number" int64
+    "transaction_hash" string
+    "type" string
+    "contract_address" string
+    "operator" string
+    "pool_name" string
+    "token_0_symbol" string
+    "token_0_amount" float64
+    "token_0_amount_raw" float64
+    "token_0_address" string
+    "token_0_value" float64
+    "token_1_symbol" string
+    "token_1_amount" float64
+    "token_1_amount_raw" float64
+    "token_1_address" string
+    "token_1_value" float64
+}
+
+Table "dex_cashflow"."solana_swap_cashflow" {
+    "uuid" string
+    "block_date" date
+    "block_timestamp" timestamp
+    "block_number" int64
+    "transaction_hash" string
+    "contract_address" string
+    "operator" string
+    "pool_name" string
+    "token_0_symbol" string
+    "token_0_amount" float64
+    "token_0_amount_raw" float64
+    "token_0_address" string
+    "token_0_value" float64
+    "token_1_symbol" string
+    "token_1_amount" float64
+    "token_1_amount_raw" float64
+    "token_1_address" string
+    "token_1_value" float64
+}
+
+Table "nft"."nft_collection_daily_stats" {
+    "collection_name" STRING [note: 'the name of this NFT Collection']
+    "protocol_slug" STRING [note: 'the protocol name of this NFT Collection']
+    "on_date" DATE [note: 'the date of this record']
+    "chain" STRING [note: 'the chain of this NFT Collection']
+    "contract_address" STRING [note: 'the contract address of this NFT Collection']
+    "number_of_holders" INTEGER [note: 'the unique holders of this NFT Collection today']
+    "market_cap" FLOAT [note: 'the marketcap of this NFT Collection on that day']
+    "total_supply" float [note: 'the total supply of this NFT Collection up to now']
+    "number_of_transactions" INTEGER [note: 'the total transactons of this NFT Collection up to now']
+    "number_of_mint" INTEGER [note: 'the mint numbers of this NFT Collection up to now']
+    "number_of_burn" INTEGER [note: 'the burn numbers of this NFT Collection up to now']
+    "number_of_sale_transactions" INTEGER [note: 'the current sell numbers of this NFT Collection today']
+    "number_of_transfer_transactions" INTEGER [note: 'the transfer numbers of this NFT Collection today']
+    "volume" FLOAT [note: 'the current volume of this NFT Collection today']
+    "avg_amount" FLOAT [note: 'the avg amount of this NFT Collection today']
+    "avg_price" FLOAT [note: 'the avg price of this NFT Collection today']
+    "max_amount" FLOAT [note: 'the max amount of this NFT Collection today']
+    "min_amount" FLOAT [note: 'the min amount of this NFT Collection today']
+    "max_price" FLOAT [note: 'the max price of this NFT Collection today']
+    "min_price" FLOAT [note: 'the min price of this NFT Collection today']
+    "number_of_sellers" INTEGER [note: 'the unique seller of this NFT Collection today']
+    "number_of_buyers" INTEGER [note: 'the unique buyer of this NFT Collection today']
+    "liquidity" FLOAT [note: 'the liquidity of this NFT Collection today']
+    Note {
+        'this table show the detail daily stats of each NFT Collection.'
+    }
+}
+
+Table "nft"."nft_collection_info" {
+    "protocol_slug" string [note: 'abbreviation of the protocol']
+    "contract_address" string [note: 'address of the contract']
+    "chain" string [note: 'the chain to which the contract belongs']
+    "collection_name" string [note: 'the name of nft collection']
+    "logo" string [note: 'the logo of nft collection']
+    Note {
+        'This table shows information of nft collection.'
+    }
+}
+
+Table "nft"."nft_daily_change_stats" {
+    "on_date" date
+    "chain" string
+    "contract_address" string
+    "nft_token_id" float
+    "latest_holder" integer
+    "number_of_transactions" integer
+    "number_of_mint" integer
+    "number_of_burnt" integer
+    "number_of_sale_transactions" integer
+    "number_of_transfer_transactions" integer
+    "volume" float
+    "latest_amount" float
+    "latest_price" float
+}
+
+Table "nft"."nft_daily_stats" {
+    "on_date" date
+    "chain" string
+    "contract_address" string
+    "nft_token_id" float
+    "latest_holder" string
+    "latest_price" float
+    "latest_amount" float
+}
+
+Table "nft"."nft_latest_stats" {
+    "protocol_slug" string [note: 'Abbreviation of the protocol']
+    "collection_name" string [note: 'Name of nft collection']
+    "contract_address" string [note: 'Address of the contract']
+    "chain" string [note: 'Chain to which the contract belongs']
+    "nft_token_id" float [note: 'Id of the nft token']
+    "owner_address" string [note: 'Address of the user currently holding the nft']
+    "longest_hold_time" integer [note: 'The longest time the nft has been held']
+    "current_hold_time" integer [note: 'The length of time the current user has held the nft']
+    "date_of_birth" date [note: 'Length of time the nft was cast']
+    "past_owners" integer [note: 'Number of users who have handled the nft (including current users). (including current users).']
+    "owner_transfer_time" date [note: 'Time of transfer']
+    "max_price" float [note: 'The highest price of nft(USD)']
+    "max_amount" float [note: 'The highest price of nft']
+    "min_price" float [note: 'The lowest price of nft(USD)']
+    "min_amount" float [note: 'The lowest price of nft']
+    "avg_price" float [note: 'The average price of nft(USD).']
+    "avg_amount" float [note: 'The average price of nft']
+    "number_of_sales" integer [note: 'Number of times this nft was sold']
+    "latest_price" float [note: 'Current latest price(USD)']
+    "latest_amount" float [note: 'Current latest price']
+    Note {
+        'The table records the metrics for different nft.'
+    }
+}
+
+Table "nft"."nft_transactions" {
+    "collection_name" string [note: 'Name of nft collection']
+    "protocol_slug" string [note: 'Abbreviation of the protocol']
+    "chain" string [note: 'Chain to which the contract belongs']
+    "contract_address" integer [note: 'Address of contract']
+    "nft_token_id" float [note: 'Id of the nft token']
+    "marketplace" string [note: 'Marketplace of the transaction']
+    "from_address" string [note: 'Address of the sender']
+    "to_address" string [note: 'Address of the receiver']
+    "amount" float [note: 'Amount of tokens transferred / id of the token transferred']
+    "value_currency" string [note: 'Value of currency']
+    "value" float [note: 'Value']
+    "block_timestamp" timestamp [note: 'Timestamp of the block where this transfer was in']
+    "transaction_hash" string [note: 'Hash of the transaction']
+    "log_index" integer [note: 'Log index in the transaction receipt']
+    "marketplace_contract_address" string [note: 'Address of marketplace contract']
+    "business_type" string [note: 'Type of business']
+    Note {
+        'This table records the transactions of different nft series.'
+    }
+}
+
+Table "nft_base"."nft_daily_stats_from_2021_12_01" {
+    "on_date" date
+    "chain" string
+    "contract_address" string
+    "nft_token_id" float
+    "latest_holder" string
+    "latest_price" float
+    "latest_amount" float
+}
+
+Table "nft"."ethereum_nft_looksrare_marketplace_transactions" {
+    "marketplace" string
+    "chain" string
+    "marketplace_contract_address" string [note: 'marketplace_contract_address']
+    "contract_address" string [note: 'contract_address']
+    "nft_token_id" string
+    "block_timestamp" string
+    "transaction_hash" string
+    "log_index" integer
+    "value_currency" string
+    "amount" float
+    "value" float
+    "buyer" string
+    "seller" string
+}
+
+Table "nft"."ethereum_nft_opensea_marketplace_transactions" {
+    "marketplace" string
+    "chain" string
+    "marketplace_contract_address" string [note: 'marketplace_contract_address']
+    "contract_address" string [note: 'contract_address']
+    "nft_token_id" string
+    "block_timestamp" string
+    "transaction_hash" string
+    "log_index" integer
+    "value_currency" string
+    "amount" float
+    "value" float
+    "buyer" string
+    "seller" string
+}
+
+Table "nft"."ethereum_nft_x2y2_marketplace_transactions" {
+    "marketplace" string
+    "chain" string
+    "marketplace_contract_address" string [note: 'marketplace_contract_address']
+    "contract_address" string [note: 'contract_address']
+    "nft_token_id" string
+    "block_timestamp" string
+    "transaction_hash" string
+    "log_index" integer
+    "value_currency" string
+    "amount" float
+    "value" float
+    "buyer" string
+    "seller" string
+}
+
+Table "nft"."nft_marketplace_transactions" {
+    "marketplace" string
+    "chain" string
+    "marketplace_contract_address" string [note: 'marketplace_contract_address']
+    "contract_address" string [note: 'contract_address']
+    "nft_token_id" string
+    "block_timestamp" string
+    "transaction_hash" string
+    "log_index" integer
+    "value_currency" string
+    "amount" float
+    "value" float
+    "buyer" string
+    "seller" string
+}
+
+Table "protocol_info"."protocol_info" {
+    "protocol_slug" string [note: 'the abbreviation of the protocol ']
+    "chain" string [note: 'the chain of the protocol']
+    "protocol_type" string [note: 'the type ot the protocol(DeFi,NFT or GameFi)']
+    "protocol_sub_type" string [note: 'the sub type of the protocol']
+    "protocol_name" string [note: 'the protocol name ']
+    "logo" string [note: 'the logo link of the protocol']
+    "discord" string [note: 'the link of the discord']
+    "github" string [note: 'the link of the github ']
+    "twitter" string [note: 'the link of the twitter ']
+    "telegram" string [note: 'the address of telegram']
+    "web_url" string [note: 'the link of the protocol website']
+    "description" string [note: 'the description of the protocol']
+    Note {
+        'This table shows information of protocol.'
+    }
+}
+
+Table "protocol_info"."protocol_info_external_mapping" {
+    "protocol_slug" string [note: 'the abbreviation of the protocol ']
+    "chain" string [note: 'the chain of the protocol']
+    "alias_protocol_slug" string [note: 'alias protocol_slug']
+    "source" string [note: 'the source of the alias protocol_slug']
+    Note {
+        'This table shows information of alias protocol.'
+    }
+}
+
+Table "protocol_transactions"."protocol_active_address" {
+    "on_date" date [note: 'the statistical date']
+    "chain" string [note: 'the chain of protocol']
+    "contract_address" string [note: 'address of the contract']
+    "protocol_slug" string [note: 'abbreviation of protocol']
+    "wallet_address" integer [note: 'wallet address']
+    "protocol_name" string [note: 'name of protocol']
+    "number_of_transactions" integer [note: 'Number of address transactions on the day']
+    "is_new_address" boolean [note: 'first transaction address']
+    "protocol_type" string [note: 'type of protocol']
+    Note {
+        'This table records the protocol active address data.'
+    }
+}
+
+Table "protocol_transactions"."user_indicator_ignore_methods" {
+    "method_id" unknown
+    "method_name" unknown
+}
+
+Table "solana_cashflow"."solana_token_transfers" {
+    "uuid" string [note: 'uuid']
+    "transaction_hash" string [note: 'transaction hash']
+    "block_timestamp" timestramp [note: 'the time on the block height']
+    "block_date" datetime [note: 'the date on the block height']
+    "block_number" int64 [note: 'transaction happens on which block height']
+    "from_address" string [note: 'source token account of token transfer']
+    "to_address" string [note: 'destination token account of token transfer']
+    "token_address" string [note: 'token address']
+    "token_decimals" string [note: 'decimals']
+    "amount_raw" float64 [note: 'amount of token transfer in wei']
+    "amount" float64 [note: 'amount of token transfer']
+    "price" float64 [note: 'token price in usd']
+    "value" float64 [note: 'value of token transfer in usd']
+    "from_pre_token_balance" float64 [note: 'token balance of source token account before transfer']
+    "from_post_token_balance" float64 [note: 'token balance of source token account after transfer']
+    "to_pre_token_balance" float64 [note: 'token balance of destination token account before transfer']
+    "to_post_token_balance" float64 [note: 'token balance of destination token account after transfer']
+}
+
+Table "token_info"."erc20_tokens" {
+    "token_slug" string [note: 'token_slug']
+    "chain" string
+    "token_address" string
+    "token_symbol" string
+    "decimals" integer
+    "index" integer
+}
+
+Table "token_info"."token_info" {
+    "token_slug" string [note: 'abbreviation of the token']
+    "chain" string [note: 'abbreviation of the chain']
+    "token_address" string [note: 'the address of token']
+    "token_symbol" string [note: 'the symbol of token']
+    "decimals" integer [note: 'the decimals of token']
+    "type" string [note: 'the type of token slug']
+    "token_type" string [note: 'use token user scenario type']
+    "protocol_slug" string [note: 'abbreviation of the protocol']
+    "manual_slug" string [note: 'Abbreviation for community-contributed token']
+    "erc20_slug" string [note: 'abbreviation of the erc20']
+    "coin_gecko_slug" string [note: 'abbreviation of the erc20']
+    "logo" string [note: 'link of logo']
+    Note {
+        'This table shows information of token.'
+    }
+}
+
+Table "token_price"."token_price_5min" {
+    "timestamp" timestamp
+    "token_address" string
+    "chain" string
+    "token_symbol" string
+    "decimals" integer
+    "price" float64
+}
+
+Table "token_price"."token_price_daily" {
+    "on_date" date [note: 'on_date']
+    "token_address" string
+    "chain" string
+    "token_symbol" string
+    "decimals" integer
+    "price" float64
+}
+
+Table "token_price"."coingecko_token_price_5min" {
+    "timestamp" timestamp [note: 'timestamp']
+    "coin_gecko_id" stirng
+    "token_address" string
+    "chain" string
+    "token_symbol" string
+    "price" float64
+}
+
+Table "token_price"."coingecko_token_price_daily" {
+    "on_date" date [note: 'on_date']
+    "coin_gecko_id" string
+    "token_address" string
+    "chain" string
+    "token_symbol" string
+    "price" float64
+}
+
+Table "tokenomic"."bsc_token_mint_burn" {
+    "uuid" string
+    "block_date" date
+    "transaction_hash" string
+    "block_timestamp" timestamp
+    "block_number" int64
+    "operator" string
+    "token_amount" float64
+    "token_amount_raw" float64
+    "token_symbol" string
+    "token_address" string
+    "type" string
+}Project Footprint {
+  database_type: 'Doris'
+  Note: 'Footprint Data'
+}
+
+Table "events"."opensea_ethereum_parse_orders_matched_event" {
+    block_timestamp timestamp [note: 'Timestamp of the block where this transfer was in']
+    block_number int64 [note: 'transaction happens on which block height']
+    transaction_hash string
+    log_index int64
+    contract_address string
+    buyHash string
+    sellHash string
+    maker string
+    price string
+    metadata string
+}
+
+
+// ========================= Public =========================
+
+
+// ========================= NFT =========================
+// transaction_hash + log_index
+Ref: "nft"."ethereum_nft_opensea_marketplace_transactions".("transaction_hash",log_index) - "nft"."nft_transactions".("transaction_hash",log_index)
+Ref: "nft"."ethereum_nft_x2y2_marketplace_transactions".("transaction_hash",log_index) - "nft"."nft_transactions".("transaction_hash",log_index)
+Ref: "nft"."ethereum_nft_looksrare_marketplace_transactions".("transaction_hash",log_index) - "nft"."nft_transactions".("transaction_hash",log_index)
+
+Ref: "token_transfers"."bsc_erc721_token_transfers".("transaction_hash",log_index) - "nft"."nft_transactions".("transaction_hash",log_index)
+Ref: "token_transfers"."ethereum_erc721_token_transfers".("transaction_hash",log_index) - "nft"."nft_transactions".("transaction_hash",log_index)
+Ref: "token_transfers"."polygon_erc721_token_transfers".("transaction_hash",log_index) - "nft"."nft_transactions".("transaction_hash",log_index)
+
+Ref: "token_transfers"."bsc_erc1155_token_transfers".("transaction_hash",log_index) - "nft"."nft_transactions".("transaction_hash",log_index)
+Ref: "token_transfers"."ethereum_erc1155_token_transfers".("transaction_hash",log_index) - "nft"."nft_transactions".("transaction_hash",log_index)
+Ref: "token_transfers"."polygon_erc1155_token_transfers".("transaction_hash",log_index) - "nft"."nft_transactions".("transaction_hash",log_index)
+
+// nft_token_id
+Ref: "nft"."nft_transactions".(chain,contract_address,nft_token_id) <> "nft"."nft_daily_stats".(chain,contract_address,nft_token_id)
+Ref: "nft"."nft_transactions".(chain,contract_address,nft_token_id) > "nft"."nft_latest_stats".(chain,contract_address,nft_token_id)
+
+// collection_slug
+Ref: "nft"."nft_transactions".(chain,contract_address) <> "nft"."nft_collection_daily_stats".(chain,contract_address)
+
+
+// ========================= Token =========================
+
+
+// ========================= Address =========================
+
+
+// ========================= DeFi =========================
+
+
+

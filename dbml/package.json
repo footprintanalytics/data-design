@@ -1,0 +1,16 @@
+{
+  "name": "dbml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dbdocs": "0.6.3"
+  },
+  "scripts": {
+    "read_table_info": "python table_relationship_diagram.py",
+    "build": "dbdocs build table_info.dbml",
+    "read_and_build": "npm run read_table_info && npm run build"
+  },
+  "author": "",
+  "license": "ISC"
+}
