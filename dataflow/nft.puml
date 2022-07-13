@@ -51,6 +51,9 @@ package silver #F5F5F5 {
 
     object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=token_price_5min_all token_price_5min_all]]" as token_price_5min_all
     object "[[https://dbdocs.io/github/Footprint?table=ethereum_nft_opensea_protocol_marketplace_transactions&schema=nft&view=table_structure \n{chain}_nft_{marketplace_name}_protocol_marketplace_transactions]]" as  protocol_marketplace_transactions {
+
+    }
+    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=nft_transactions nft_transactions]]" as nft_transactions {
         transaction_hash
         block_timestamp
         block_date
@@ -78,7 +81,6 @@ package silver #F5F5F5 {
         platform_fees_value
         +trade_type: bundle/single
     }
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=nft_transactions nft_transactions]]" as nft_transactions
     object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=nft_transfers nft_transfers]]" as nft_transfers
 }
 
