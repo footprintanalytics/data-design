@@ -1,6 +1,7 @@
 @startuml
 !define LIGHTBLUE
 !includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
 package bronze #D7CCC8 {
     object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_transactions \n{chain}_transactions]]" as raw_transactions{
         block_timestamp
@@ -51,13 +52,7 @@ package bronze #D7CCC8 {
         token_symbol
         price
     }
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=dex_token_price_daily dex_token_price_daily]]" as dex_token_price_daily{
-        on_date
-        token_address
-        chain
-        token_symbol
-        price
-    }
+
     object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=token_transfers_v3 token_transfers_v3]]" as token_transfers_v3{
         block_timestamp
         signature
@@ -69,6 +64,11 @@ package bronze #D7CCC8 {
         scale
         value
     }
+
+}
+
+package silver #F5F5F5 {
+
     object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=solana_dex_pool_accounts solana_dex_pool_accounts]]" as solana_dex_pool_accounts{
         pool_address
         pool_name
@@ -76,9 +76,15 @@ package bronze #D7CCC8 {
         token_address
         token_symbol
     }
-}
 
-package silver #F5F5F5 {
+    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=dex_token_price_daily dex_token_price_daily]]" as dex_token_price_daily{
+        on_date
+        token_address
+        chain
+        token_symbol
+        price
+    }
+
     object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_transactions chain_transactions]]" as chain_transactions{
         block_timestamp
         block_date
@@ -92,7 +98,7 @@ package silver #F5F5F5 {
         gas_price
     }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_token_transfers chain_token_transfers]]" as chain_token_transfers{
+    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_token_transfers \n{chain}_token_transfers]]" as chain_token_transfers{
         block_timestamp
         block_date
         block_hash
@@ -109,7 +115,7 @@ package silver #F5F5F5 {
         token_price
      }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_logs chain_logs]]" as chain_logs {
+    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_logs \n{chain}_logs]]" as chain_logs {
         block_timestamp
         block_number
         block_hash

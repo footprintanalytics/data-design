@@ -1,23 +1,14 @@
 @startuml
 !define LIGHTBLUE
 !includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
 package bronze #D7CCC8 {
-    object token_info{
-        token_slug
-        chain
-        token_address
-        token_symbol
-        decimals
-        protocol_slug
-        erc20_slug
-        coin_gecko_slug
-    }
     object chainlink_token_price_daily{
         on_date
         token_address
         chain
         token_symbol
-        price
+        priceÏ
     }
     object coingecko_token_price_daily{
         on_date
@@ -27,14 +18,7 @@ package bronze #D7CCC8 {
         token_symbol
         price
     }
-    object dex_token_price_daily{
-        on_date
-        token_address
-        chain
-        token_symbol
-        price
-    }
-    object "{chain}_token_transfers" as chain_token_transfers{
+    object "[[https://dbdocs.io/github/Footprint?table=arbitrum_token_transfers&schema=token_transfers&view=table_structure \n {chain}_token_transfers]]"  as chain_token_transfers{
         on_date
         chain
         from_address
@@ -43,15 +27,32 @@ package bronze #D7CCC8 {
         value
         transaction_hash
     }
+}
+
+
+package silver #F5F5F5 {
+    object "[[https://dbdocs.io/github/Footprint?table=token_info&schema=token_info&view=table_structure token_info]]" as token_info{
+        token_slug
+        chain
+        token_address
+        token_symbol
+        decimals
+        protocol_slug
+        erc20_slug
+        coin_gecko_slug
+    }
+    object dex_token_price_daily{
+        on_date
+        token_address
+        chain
+        token_symbol
+        price
+    }
     object special_token_address{
         address
         token_address
         address_type
     }
-}
-
-
-package silver #F5F5F5 {
     object token_price_daily{
         on_date
         token_address

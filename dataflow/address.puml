@@ -1,0 +1,193 @@
+@startuml
+!define LIGHTBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+package bronze #D7CCC8 {
+    object chainlink_token_price_daily{
+        on_date
+        token_address
+        chain
+        token_symbol
+        price
+    }
+    object coingecko_token_price_daily{
+        on_date
+        coin_gecko_id
+        token_address
+        chain
+        token_symbol
+        price
+    }
+
+    object "[[https://dbdocs.io/github/Footprint?table=arbitrum_token_transfers&schema=token_transfers&view=table_structure \n {chain}_token_transfers]]"  as chain_token_transfers{
+        block_timestamp
+        block_date
+        block_hash
+        transaction_hash
+        block_number
+        from_address
+        to_address
+        token_address
+        token_symbol
+        decimals
+        amount_raw
+        amount
+        value
+        token_price
+    }
+}
+package silver #F5F5F5 {
+
+    object "[[https://dbdocs.io/github/Footprint?table=token_info&schema=token_info&view=table_structure token_info]]" as token_info{
+        token_slug
+        chain
+        token_address
+        token_symbol
+        decimals
+        protocol_slug
+        erc20_slug
+        coin_gecko_slug
+    }
+
+    object dex_token_price_daily{
+        on_date
+        token_address
+        chain
+        token_symbol
+        price
+    }
+    object address_special_token{
+        chain
+        token_address
+        is_chain_coin
+    }
+    object token_price_daily{
+        on_date
+        token_address
+        chain
+        token_symbol
+        decimals
+        price
+    }
+    object "{chain}_token_balances_daily_stats_180d" as chain_token_balances_daily_stats_180d{
+        on_date
+        address
+        chain
+        token_address
+        out_amount_raw
+        in_amount_raw
+        balance_raw
+        number_of_in_transactions
+        number_of_out_transactions
+        number_of_transactions
+        decimals
+        protocol_slug
+        token_slug
+        token_symbol
+        balance
+        out_amount
+        in_amount
+    }
+    object "{chain}_token_balances_change_daily" as chain_token_balances_change_daily{
+        on_date
+        address
+        chain
+        token_address
+        out_amount_raw
+        in_amount_raw
+        balance_raw
+        number_of_in_transactions
+        number_of_out_transactions
+        number_of_transactions
+    }
+
+    object "{chain}_token_balances_from_2021_12_01" as chain_token_balances_from_2021_12_01{
+        on_date
+        address
+        chain
+        token_address
+        balance_raw
+        balance
+        decimals
+        protocol_slug
+        token_slug
+        token_symbol
+    }
+}
+
+package gold #FFECB3 {
+    object address_token_daily_stats{
+        on_date
+        address
+        chain
+        token_address
+        number_of_transactions
+        number_of_out_transactions
+        number_of_in_transactions
+        balance_raw
+        in_amount_raw
+        out_amount_raw
+        protocol_slug
+        token_slug
+        token_symbol
+        decimals
+        balance
+        out_amount
+        in_amount
+        token_price
+        balance_value
+    }
+
+    object address_token_daily_stats_from_contract{
+        on_date
+        address
+        chain
+        token_address
+    }
+
+    object token_balances_daily_stats{
+        on_date
+        address
+        chain
+        token_address
+        number_of_in_transactions
+        number_of_out_transactions
+        number_of_transactions
+        balance_raw
+        in_amount_raw
+        out_amount_raw
+        protocol_slug
+        token_slug
+        token_symbol
+        decimals
+        balance
+        out_amount
+        in_amount
+    }
+
+    object address_token{
+        on_date
+        address
+        token_address
+        chain
+    }
+
+}
+chainlink_token_price_daily-->token_price_daily
+coingecko_token_price_daily-->token_price_daily
+dex_token_price_daily-->token_price_daily
+address_special_token-->address_token
+token_balances_daily_stats-->address_token
+address_token-->address_token_daily_stats_from_contract
+address_token_daily_stats_from_contract-->address_token_daily_stats
+token_info-->address_token_daily_stats
+chain_token_transfers-->chain_token_balances_change_daily
+chain_token_balances_change_daily-->chain_token_balances_daily_stats_180d
+chain_token_balances_daily_stats_180d-->token_balances_daily_stats
+token_balances_daily_stats-->address_token_daily_stats
+chain_token_transfers-->chain_token_balances_from_2021_12_01
+token_info-->chain_token_balances_from_2021_12_01
+chain_token_balances_from_2021_12_01-->chain_token_balances_daily_stats_180d
+token_info-->chain_token_balances_daily_stats_180d
+token_price_daily-->address_token_daily_stats
+@enduml

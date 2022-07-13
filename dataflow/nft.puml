@@ -53,6 +53,7 @@ package silver #F5F5F5 {
     object "[[https://dbdocs.io/github/Footprint?table=ethereum_nft_opensea_protocol_marketplace_transactions&schema=nft&view=table_structure \n{chain}_nft_{marketplace_name}_protocol_marketplace_transactions]]" as  protocol_marketplace_transactions {
         transaction_hash
         block_timestamp
+        block_date
         block_number
         log_index
         chain
@@ -110,7 +111,10 @@ package gold #FFECB3 {
         on_date
         chain
         collection_contract_address
+        +collection_name
+        +collection_slug
         marketplace_slug
+        +marketplace_name
         number_of_buyers
         number_of_sellers
         number_of_sales_transactions
@@ -119,7 +123,6 @@ package gold #FFECB3 {
         max_price
         avg_price
         min_price
-
         market_cap
         floor_price
     }
