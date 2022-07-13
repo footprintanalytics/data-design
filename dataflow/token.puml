@@ -61,7 +61,7 @@ package silver #F5F5F5 {
         decimals
         price
     }
-    object token_daily_stats_coin_gecko{
+    object token_daily_stats_ck {
         day
         address
         symbol
@@ -156,7 +156,7 @@ package gold #FFECB3 {
 token_info-->token_daily_stats
 token_info-->token_chain_daily_stats
 token_price_daily -->token_daily_stats
-token_daily_stats_coin_gecko -->token_daily_stats
+token_daily_stats_ck -->token_daily_stats
 chain_token_transfer_daily_stats-->token_chain_daily_stats
 special_token_address_indicators-->token_chain_daily_stats
 
