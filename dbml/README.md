@@ -1,4 +1,4 @@
-## Generate dbdocs
+## Generate dbdocs operation process
 
 - Install the packages needed to run
   - run it on command line  `npm i -g dbdocs`
