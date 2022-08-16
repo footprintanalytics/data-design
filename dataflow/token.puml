@@ -38,8 +38,13 @@ package silver #F5F5F5 {
         token_symbol
         decimals
         protocol_slug
-        erc20_slug
-        coin_gecko_slug
+        logo
+    }
+    object token_info_external_mapping{
+        token_slug
+        chain
+        alias_token_slug
+        source
     }
     object dex_token_price_daily{
         on_date
@@ -155,6 +160,7 @@ package gold #FFECB3 {
 
 token_info-->token_daily_stats
 token_info-->token_chain_daily_stats
+token_info_external_mapping -->token_daily_stats
 token_price_daily -->token_daily_stats
 token_daily_stats_ck -->token_daily_stats
 chain_token_transfer_daily_stats-->token_chain_daily_stats

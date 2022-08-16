@@ -1,0 +1,126 @@
+@startuml
+!define LIGHTBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+package bronze #D7CCC8 {
+    object "[[https://dbdocs.io/github/Footprint?table=arbitrum_transactions&schema=transactions&view=table_structure \n{chain}_transactions]]" as chain_transactions{
+        block_timestamp
+        block_date
+        hash
+        block_hash
+        block_number
+        from_address
+        to_address
+        value
+    }
+
+    object "{chain}_token_transfers" as chain_token_transfers {
+        from_address
+        to_address
+        decimals
+        token_address
+        transaction_hash
+        token_symbol
+        amount_raw
+        amount
+        value
+    }
+}
+
+package silver #F5F5F5 {
+
+    object token_price_5min
+
+    object "[[https://dbdocs.io/github/Footprint?table=contract_info&schema=contract_info&view=table_structure contract_info]]" as contract_info{
+        chain
+        contract_address
+        protocol_slug
+    }
+
+    object "[[https://dbdocs.io/github/Footprint?table=protocol_info&schema=protocol_info&view=table_structure protocol_info]]" as protocol_info{
+        chain
+        protocol_slug
+        protocol_name
+        protocol_type
+        logo
+    }
+
+    object protocol_transactions {
+        chain
+        protocol_name
+        protocol_slug
+        contract_address
+        contract_method_id
+        contract_method_name
+        wallet_address
+        block_timestamp
+        transaction_hash
+        amount_raw
+        amount
+        value
+    }
+
+    object protocol_token_transfers {
+        chain
+        protocol_name
+        protocol_slug
+        from_address
+        to_address
+        decimals
+        token_address
+        transaction_hash
+        token_symbol
+        amount_raw
+        amount
+        value
+    }
+
+    object "protocol_active_address" as protocol_active_address {
+        on_date
+        protocol_slug
+        protocol_name
+        chain
+        wallet_address
+        is_new_address
+        protocol_type
+    }
+}
+
+
+chain_transactions --> protocol_transactions
+contract_info --> protocol_transactions
+protocol_info --> contract_info
+
+chain_token_transfers --> protocol_token_transfers
+contract_info-->protocol_token_transfers
+
+package gold #FFECB3 {
+    object protocol_daily_stats{
+        on_date
+        protocol_slug
+        protocol_name
+        chain
+        volume
+        number_of_unique_users
+        number_of_new_users
+        number_of_total_users
+        number_of_d1_active_user
+        number_of_d7_active_user
+        number_of_d30_active_user
+        number_of_d180_active_user
+        number_of_d360_active_user
+        number_of_d1_new_user
+        number_of_d7_new_user
+        number_of_d30_new_user
+        number_of_d180_new_user
+        number_of_d360_new_user
+    }
+}
+
+token_price_5min --> protocol_token_transfers
+token_price_5min --> protocol_transactions
+protocol_transactions -> protocol_daily_stats
+protocol_token_transfers -> protocol_daily_stats
+protocol_active_address -> protocol_daily_stats
+protocol_transactions-->protocol_active_address
+@enduml

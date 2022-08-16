@@ -1,0 +1,97 @@
+@startuml
+!define LIGHTBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+
+package protocol {
+    object contract_info{
+        chain
+        contract_address
+        protocol_slug
+    }
+
+    object protocol_info{
+        chain
+        protocol_slug
+        protocol_name
+        protocol_type
+        logo
+    }
+}
+
+
+    object chian_info{
+        chain
+        chain_full_name
+        evm_chain_id
+    }
+
+package token{
+
+    object token_info{
+        token_slug
+        chain
+        token_address
+        token_symbol
+        decimals
+        token_name
+        protocol_slug
+        logo
+    }
+}
+
+
+package nft  {
+
+    object nft_info  {
+        chain
+        contract_address
+        collection_name
+        collection_slug
+        image_url
+        nft_token_id
+        token_name
+        mint_transaction_hash
+        mint_block_timestamp
+        mint_address
+        metadata_uri
+        metadata : string (to_json)
+    }
+
+    object nft_collection_info {
+        collection_slug
+        collection_name
+        create_at
+        first_mint_at
+        description
+		total_supply (-1 means infinity)
+        discord_url
+        website_url
+        image_url
+		telegram_url
+        instagram_username
+        medium_username
+        twitter_username
+    }
+
+    object nft_token_attributes  {
+        chain
+        contract_address
+        nft_token_id
+        collection_slug
+        attribute_key
+        attribute_value
+    }
+
+}
+
+protocol_info --> contract_info: 1:n
+contract_info <..> token_info: 1:1
+contract_info <..> nft_collection_info: 1:1
+protocol_info <..> token_info: n:n
+
+nft_collection_info --> nft_info: 1:n
+nft_info --> nft_token_attributes: 1:n
+
+
+@enduml

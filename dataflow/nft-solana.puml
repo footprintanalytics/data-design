@@ -1,0 +1,104 @@
+@startuml
+!define LIGHTBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+
+package bronze #D7CCC8 {
+    object external_solana_nft_info
+    object solana_transactions
+    object solana_token_transfers
+    object solana_program_info {
+        program_address
+        protocol_slug
+    }
+}
+
+package silver #F5F5F5 {
+    object "solana_{protocol}_{instructions}_{type}" as solana_protocol_instructions_type {
+        block_timestamp
+        gen_id
+        transaction_hash
+        block_number
+        program
+        data
+        accounts
+    }
+
+    object solana_nft_info {
+        nft_token_id
+        metadata_account_address
+        collection_name
+        collection_address
+        token_name
+        metadata_uri
+        on_chain_metadta
+        off_chain_metadata
+    }
+
+    object solana_nft_protocol_marketplace_transactions {
+        transaction_hash
+        block_timestamp
+        block_date
+        block_number
+        log_index
+        chain
+        collection_contract_address
+        collection_slug
+        nft_token_id
+        marketplace_contract_address
+        marketplace_slug
+        number_of_nft_token_id
+        value: (USD)
+        value_currency: string, default "USD"
+        amount
+        amount_currency
+        amount_currency_contract_address
+        buyer_address
+        seller_address
+        royalty_rate
+        royalty_amount
+        royalty_value
+        platform_fee_rate
+        platform_fees_amount
+        platform_fees_value
+        trade_type: bundle/single
+        metadata_account
+    }
+
+    object solana_nft_token_transfers
+
+    object nft_info {
+        chain
+        contract_address
+        collection_name
+        collection_slug
+        image_url
+        nft_token_id
+        token_name
+        mint_transaction_hash
+        mint_block_timestamp
+        mint_address
+        metadata_uri
+        metadata : string
+    }
+
+    object token_price_5min_all
+    object nft_transactions
+    object nft_transfers
+}
+
+solana_program_info --> solana_protocol_instructions_type
+solana_transactions --> solana_protocol_instructions_type
+solana_protocol_instructions_type --> solana_nft_protocol_marketplace_transactions
+solana_protocol_instructions_type --> solana_nft_info
+solana_token_transfers --> solana_nft_protocol_marketplace_transactions
+solana_nft_protocol_marketplace_transactions --> nft_transactions
+external_solana_nft_info --> solana_nft_info
+solana_token_transfers --> solana_nft_token_transfers
+solana_nft_info --> nft_info
+nft_info --> solana_nft_token_transfers
+nft_info --> solana_nft_protocol_marketplace_transactions
+token_price_5min_all --> solana_nft_protocol_marketplace_transactions
+solana_nft_token_transfers --> nft_transfers
+
+@enduml
