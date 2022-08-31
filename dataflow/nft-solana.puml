@@ -65,7 +65,7 @@ package silver #F5F5F5 {
         metadata_account
     }
 
-    object solana_nft_token_transfers
+    object solana_nft_transfers
 
     object nft_info {
         chain
@@ -94,11 +94,11 @@ solana_protocol_instructions_type --> solana_nft_info
 solana_token_transfers --> solana_nft_protocol_marketplace_transactions
 solana_nft_protocol_marketplace_transactions --> nft_transactions
 external_solana_nft_info --> solana_nft_info
-solana_token_transfers --> solana_nft_token_transfers
+solana_token_transfers --> solana_nft_transfers
 solana_nft_info --> nft_info
-nft_info --> solana_nft_token_transfers
+nft_info --> solana_nft_transfers
 nft_info --> solana_nft_protocol_marketplace_transactions
 token_price_5min_all --> solana_nft_protocol_marketplace_transactions
-solana_nft_token_transfers --> nft_transfers
+solana_nft_transfers --> nft_transfers
 
 @enduml

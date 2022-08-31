@@ -31,6 +31,29 @@ package bronze #D7CCC8 {
 
 
 package silver #F5F5F5 {
+
+    object erc20_tokens {
+        token_address
+        decimals
+        token_symbol
+        chain
+    }
+
+    object solana_tokens {
+        token_address
+        decimals
+        token_symbol
+        chain
+    }
+
+    object token_chain_info {
+        token_address
+        decimals
+        token_symbol
+        chain
+        has_price-(true/false)
+    }
+
     object "[[https://dbdocs.io/github/Footprint?table=token_info&schema=token_info&view=table_structure token_info]]" as token_info{
         token_slug
         chain
@@ -124,6 +147,11 @@ chain_token_transfer_new_address -->chain_token_transfer_daily_stats
 special_token_address-->special_token_address_indicators
 chain_token_transfers-->special_token_address_indicators
 chain_token_transfers-->chain_token_transfer_daily_stats
+
+erc20_tokens --> token_chain_info
+solana_tokens --> token_chain_info
+token_chain_info --> token_info: filter
+
 package gold #FFECB3 {
     object token_daily_stats{
         on_date

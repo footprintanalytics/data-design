@@ -1,0 +1,215 @@
+@startuml
+!define LIGHTBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+package bronze #D7CCC8 {
+    object "[[https://dbdocs.io/github/Footprint?table=arbitrum_transactions&schema=transactions&view=table_structure \n{chain}_transactions]]" as chain_transactions{
+        block_timestamp
+        block_date
+        hash
+        block_hash
+        block_number
+        from_address
+        to_address
+        value
+    }
+
+    object "{chain}_token_transfers" as chain_token_transfers {
+        from_address
+        to_address
+        decimals
+        token_address
+        transaction_hash
+        token_symbol
+        amount_raw
+        amount
+        value
+    }
+}
+
+package silver #F5F5F5 {
+
+    object protocol_info_external_mapping{
+        protocol_slug
+        chain
+        alias_protocol_slug
+        source
+    }
+
+    object "{external}_protocol_info" as external_table {
+        protocol_slug
+        source
+        ...
+    }
+
+    object token_price_5min
+
+    object "[[https://dbdocs.io/github/Footprint?table=contract_info&schema=contract_info&view=table_structure contract_info]]" as contract_info{
+        chain
+        contract_address
+        protocol_slug
+    }
+
+    object "[[https://dbdocs.io/github/Footprint?table=protocol_info&schema=protocol_info&view=table_structure protocol_info]]" as protocol_info{
+        chain
+        protocol_slug
+        protocol_name
+        protocol_type
+        logo
+    }
+
+    object protocol_transactions {
+        chain
+        protocol_name
+        protocol_slug
+        contract_address
+        contract_method_id
+        contract_method_name
+        wallet_address
+        block_timestamp
+        transaction_hash
+        amount_raw
+        amount
+        value
+    }
+
+    object protocol_token_transfers {
+        chain
+        protocol_name
+        protocol_slug
+        from_address
+        to_address
+        decimals
+        token_address
+        transaction_hash
+        token_symbol
+        amount_raw
+        amount
+        value
+    }
+
+    object "protocol_active_address" as protocol_active_address {
+        on_date
+        protocol_slug
+        protocol_name
+        chain
+        wallet_address
+        is_new_address
+    }
+}
+
+external_table <-- protocol_info_external_mapping
+protocol_info <- protocol_info_external_mapping
+chain_transactions --> protocol_transactions
+contract_info --> protocol_transactions
+protocol_info --> contract_info
+
+chain_token_transfers --> protocol_token_transfers
+contract_info-->protocol_token_transfers
+
+package gold #FFECB3 {
+    object protocol_daily_stats{
+        on_date
+        protocol_slug
+        protocol_name
+        chain
+        volume
+        number_of_active_users
+        number_of_new_users
+        number_of_total_users
+        new_users_1d_pct_change
+        new_users_7d_pct_change
+        new_users_30d_pct_change
+        new_users_180d_pct_change
+        new_users_360d_pct_change
+        active_users_1d_pct_change
+        active_users_7d_pct_change
+        active_users_30d_pct_change
+        active_users_180d_pct_change
+        active_users_360d_pct_change
+'        number_of_d1_active_user
+'        number_of_d7_active_user
+'        number_of_d30_active_user
+'        number_of_d180_active_user
+'        number_of_d360_active_user
+'        number_of_d1_new_user
+'        number_of_d7_new_user
+'        number_of_d30_new_user
+'        number_of_d180_new_user
+'        number_of_d360_new_user
+    }
+    object protocol_address_retention_daily {
+        cohort
+        protocol_slug
+        protocol_name
+        start_date
+        end_date
+        chain
+        number_of_new_users
+        day_1
+        day_2
+        day_3
+        day_4
+        day_5
+        day_6
+        day_7
+        day_8
+        day_9
+        day_10
+        day_11
+        day_12
+    }
+    object protocol_address_retention_weekly {
+        cohort
+        protocol_slug
+        protocol_name
+        start_date
+        end_date
+        chain
+        number_of_new_users
+        week_1
+        week_2
+        week_3
+        week_4
+        week_5
+        week_6
+        week_7
+        week_8
+        week_9
+        week_10
+        week_11
+        week_12
+    }
+    object protocol_address_retention_monthly {
+        cohort
+        protocol_slug
+        protocol_name
+        start_date
+        end_date
+        chain
+        number_of_new_users
+        month_1
+        month_2
+        month_3
+        month_4
+        month_5
+        month_6
+        month_7
+        month_8
+        month_9
+        month_10
+        month_11
+        month_12
+    }
+}
+
+token_price_5min --> protocol_token_transfers
+token_price_5min --> protocol_transactions
+protocol_transactions -> protocol_daily_stats
+protocol_token_transfers -> protocol_daily_stats
+protocol_active_address -> protocol_daily_stats
+protocol_transactions-->protocol_active_address
+protocol_active_address --> protocol_address_retention_daily
+protocol_active_address --> protocol_address_retention_weekly
+protocol_active_address --> protocol_address_retention_monthly
+@enduml

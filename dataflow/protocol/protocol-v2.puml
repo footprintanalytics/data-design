@@ -101,7 +101,7 @@ package gold #FFECB3 {
         protocol_name
         chain
         volume
-        number_of_unique_users
+        number_of_active_users
         number_of_new_users
         number_of_total_users
         number_of_d1_active_user

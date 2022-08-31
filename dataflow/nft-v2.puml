@@ -1,6 +1,6 @@
 @startuml
 !define LIGHTBLUE
-!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+!includeurl https://static.footprint.network/puml/style.puml
 
 package bronze #D7CCC8 {
     object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_token_transfers \n{chain}_token_transfers]]" as chain_token_transfers
@@ -13,12 +13,15 @@ package silver #F5F5F5 {
         contract_address
     }
     object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=nft_collection_info \nnft_collection_info]]" as nft_collection_info {
+        chain
         collection_slug
         collection_name
-        create_at
-        first_mint_at
+        contract_address
+        standard-(ERC1155/ERC721/Metaplex)
+        logo
+        collection_created_at
         description
-		total_supply (-1 means infinity)
+		total_supply
         discord_url
         website_url
         image_url
@@ -28,16 +31,6 @@ package silver #F5F5F5 {
         twitter_username
     }
 
-'    object "nft_collection_attributes" as nft_collection_attributes {
-'		--(new)--
-'    	collection_slug
-'    	chain
-'    	contract_address
-'        attribute_key
-'        attribute_value
-'    	attribute_value_rate(-99999999.9 means no setting, count(*)/total group by attribute_key)
-'    	total_count(-99999999 means no setting)
-'    }
 
     object "{chain}_{marketplace}_{contract_name}_evt_{match_event}" as mkt_matched_event
     object "{chain}_erc1155_evt_TransferBatch" as transfer_batch_event
@@ -56,7 +49,7 @@ package silver #F5F5F5 {
         internal_index
     }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_erc1155_token_transfers \n{chain}_erc1155_token_transfers]]" as chain_1155_token_transfers   {
+    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_erc1155_token_transfers \n{chain}_erc1155_token_transfers]]" as chain_1155_token_transfers  {
         transaction_hash
         block_timestamp
         block_number
@@ -73,7 +66,6 @@ package silver #F5F5F5 {
 
     object token_price_5min
     object "[[https://dbdocs.io/github/Footprint?table=ethereum_nft_opensea_protocol_marketplace_transactions&schema=nft&view=table_structure \n{chain}_nft_{marketplace_name}_protocol_marketplace_transactions]]" as  protocol_marketplace_transactions {
-
     }
     object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=nft_transactions nft_transactions]]" as nft_transactions {
         transaction_hash
@@ -87,6 +79,7 @@ package silver #F5F5F5 {
         nft_token_id
         marketplace_contract_address
         marketplace_slug
+        internal_index
         number_of_nft_token_id
         value: (USD)
         value_currency: string, default "USD"
@@ -101,12 +94,25 @@ package silver #F5F5F5 {
         platform_fee_rate
         platform_fees_amount
         platform_fees_value
-        +trade_type: bundle/single
+        trade_type: bundle/single
     }
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=nft_transfers nft_transfers]]" as nft_transfers
+    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=nft_transfers nft_transfers]]" as nft_transfers {
+        chain
+        transaction_hash
+        block_timestamp
+        block_date
+        block_number
+        log_index
+        token_address
+        from_address
+        to_address
+        nft_token_id: string
+        amount_raw
+        internal_index
+    }
     object nft_info  {
         chain
-        contract_address
+        collection_contract_address
         collection_name
         collection_slug
         image_url
@@ -120,10 +126,11 @@ package silver #F5F5F5 {
     }
 
     object nft_token_attributes  {
-        +chain
-        +contract_address
-        +nft_token_id
-        +collection_slug
+        chain
+        collection_contract_address
+        nft_token_id
+        collection_slug
+        metadata_uri
         attribute_key
         attribute_value
     }
@@ -134,7 +141,6 @@ contract_info --> mkt_matched_event
 
 transfer_batch_event --> chain_1155_token_transfers
 transfer_single_event --> chain_1155_token_transfers
-
 chain_1155_token_transfers --> nft_transfers
 
 
@@ -152,56 +158,84 @@ package gold #FFECB3 {
         number_of_burn_transactions
         number_of_transfer_transactions
         total_minted
-        total_supply
     }
 
     object marketplace_nft_collection_daily_stats {
+        collection_slug
         on_date
         chain
         collection_contract_address
-        collection_name
-        collection_slug
         marketplace_slug
         marketplace_name
+        collection_name
         number_of_buyers
         number_of_sellers
         number_of_sales_transactions
+        amount_currency
+        volume_amount
+        max_price_amount
+        avg_price_amount
+        min_price_amount
+        floor_price_amount
+        sum_of_platform_fees_amount
+        avg_of_platform_fees_amount
+        sum_of_royalty_amount
+        avg_of_royalty_amount
         volume
-        liquidity_rate
         max_price
         avg_price
         min_price
-        market_cap
         floor_price
+        sum_of_platform_fees_value
+        avg_of_platform_fees_value
+        sum_of_royalty_value
+        avg_of_royalty_value
+        liquidity_rate
+        market_cap
     }
 
 
     object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=nft_collection_daily_stats nft_collection_daily_stats]]" as nft_collection_daily_stats  {
+        ..core..
+        collection_slug
         on_date
         chain
         collection_contract_address
-        collection_slug
         collection_name
         number_of_holders
         number_of_buyers
         number_of_sellers
-        market_cap
-        total_minted
-        total_supply
         number_of_transactions
         number_of_mint_transactions
         number_of_burn_transactions
         number_of_sales_transactions
         number_of_transfer_transactions
-        volume
+        total_minted
         liquidity_rate
+        amount_currency
+        volume_amount
+        max_price_amount
+        avg_price_amount
+        min_price_amount
+        floor_price_amount
+        sum_of_royalty_amount
+        market_cap_amount
+        volume
         max_price
         avg_price
         min_price
         floor_price
+        sum_of_royalty_value
+        market_cap
+        ..extend..
+        market_cap_7d_pct_change
+        market_cap_30d_pct_change
+        volume_7d
+        volume_30d
     }
 
     object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=nft_collection_daily_stats nft_latest_stats]]" as nft_latest_stats  {
+        ..core..
         on_date
         chain
         collection_slug
@@ -217,7 +251,16 @@ package gold #FFECB3 {
         avg_price
         number_of_sales
         latest_price
-        owner_transfers_time
+        ..extend..
+        last_price
+        max_price_7d
+        max_price_30d
+        max_price_3m
+        max_price_1y
+        number_of_sales_transactions_7d
+        number_of_sales_transactions_30d
+        number_of_sales_transactions_3m
+        number_of_sales_transactions_1y
     }
 
     object nft_collection_attributes_latest_stats {
@@ -231,11 +274,25 @@ package gold #FFECB3 {
         mint_count
         current_rate
     }
-}
+
+
+    package list {
+         object nft_collection_list {
+            collection_slug
+            chain
+            list-(top_collection/latest_stats)
+        }
+
+        object nft_list {
+            collection_slug
+            nft_token_id
+            chain
+            list-(top_sales/latest_stats)
+        }
+
+
 
 nft_token_attributes--> nft_collection_attributes_latest_stats
-
-
 mkt_matched_event--> protocol_marketplace_transactions
 chain_token_transfers --> protocol_marketplace_transactions
 chain_token_transfers --> chain_721_token_transfers
@@ -243,6 +300,9 @@ token_price_5min -right-> protocol_marketplace_transactions
 protocol_marketplace_transactions --> nft_transactions
 nft_collection_info --> chain_721_token_transfers
 nft_collection_info --> nft_info
+
+nft_collection_info --> nft_transactions
+
 nft_info --> nft_token_attributes
 chain_721_token_transfers --> nft_transfers
 nft_transfers --> nft_collection_transfers_daily_stats
