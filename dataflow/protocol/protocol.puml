@@ -1,9 +1,11 @@
 @startuml
 !define LIGHTBLUE
 !includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+skinparam linetype polyline
+skinparam linetype ortho
 
 package bronze #D7CCC8 {
-    object "[[https://dbdocs.io/github/Footprint?table=arbitrum_transactions&schema=transactions&view=table_structure \n{chain}_transactions]]" as chain_transactions{
+    object "{chain}_transactions" as chain_transactions{
         block_timestamp
         block_date
         hash
@@ -44,13 +46,13 @@ package silver #F5F5F5 {
 
     object token_price_5min
 
-    object "[[https://dbdocs.io/github/Footprint?table=contract_info&schema=contract_info&view=table_structure contract_info]]" as contract_info{
+    object "contract_info" as contract_info{
         chain
         contract_address
         protocol_slug
     }
 
-    object "[[https://dbdocs.io/github/Footprint?table=protocol_info&schema=protocol_info&view=table_structure protocol_info]]" as protocol_info{
+    object "protocol_info" as protocol_info{
         chain
         protocol_slug
         protocol_name
