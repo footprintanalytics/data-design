@@ -2,17 +2,20 @@
 !define LIGHTBLUE
 !includeurl https://static.footprint.network/puml/style.puml
 
+skinparam linetype polyline
+skinparam linetype ortho
+
 package bronze #D7CCC8 {
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_token_transfers \n{chain}_token_transfers]]" as chain_token_transfers
+    object "{chain}_token_transfers" as chain_token_transfers
 }
 
 package silver #F5F5F5 {
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=contract_info contract_info]]" as contract_info  {
+    object "contract_info" as contract_info  {
         chain
         protocol_slug
         contract_address
     }
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=nft_collection_info \nnft_collection_info]]" as nft_collection_info {
+    object "nft_collection_info" as nft_collection_info {
         chain
         collection_slug
         collection_name
@@ -36,7 +39,7 @@ package silver #F5F5F5 {
     object "{chain}_erc1155_evt_TransferBatch" as transfer_batch_event
     object "{chain}_erc1155_evt_TransferSingle" as transfer_single_event
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_erc721_token_transfers \n{chain}_erc721_token_transfers]]" as chain_721_token_transfers  {
+    object "{chain}_erc721_token_transfers" as chain_721_token_transfers  {
         transaction_hash
         block_timestamp
         block_number
@@ -49,7 +52,7 @@ package silver #F5F5F5 {
         internal_index
     }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_erc1155_token_transfers \n{chain}_erc1155_token_transfers]]" as chain_1155_token_transfers  {
+    object "{chain}_erc1155_token_transfers" as chain_1155_token_transfers  {
         transaction_hash
         block_timestamp
         block_number
@@ -65,9 +68,9 @@ package silver #F5F5F5 {
     }
 
     object token_price_5min
-    object "[[https://dbdocs.io/github/Footprint?table=ethereum_nft_opensea_protocol_marketplace_transactions&schema=nft&view=table_structure \n{chain}_nft_{marketplace_name}_protocol_marketplace_transactions]]" as  protocol_marketplace_transactions {
+    object "{chain}_nft_{marketplace_name}_protocol_marketplace_transactions" as  protocol_marketplace_transactions {
     }
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=nft_transactions nft_transactions]]" as nft_transactions {
+    object "nft_transactions" as nft_transactions {
         transaction_hash
         block_timestamp
         block_date
@@ -96,7 +99,7 @@ package silver #F5F5F5 {
         platform_fees_value
         trade_type: bundle/single
     }
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=nft_transfers nft_transfers]]" as nft_transfers {
+    object "nft_transfers" as nft_transfers {
         chain
         transaction_hash
         block_timestamp
@@ -148,7 +151,7 @@ chain_1155_token_transfers --> nft_transfers
 
 
 package gold #FFECB3 {
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=nft_collection_latest_stats nft_collection_latest_stats]]" as nft_collection_latest_stats  {
+    object "nft_collection_latest_stats" as nft_collection_latest_stats  {
     }
 
     object nft_collection_transfers_daily_stats{
@@ -199,7 +202,7 @@ package gold #FFECB3 {
     }
 
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=nft_collection_daily_stats nft_collection_daily_stats]]" as nft_collection_daily_stats  {
+    object "nft_collection_daily_stats" as nft_collection_daily_stats  {
         ..core..
         collection_slug
         on_date
@@ -327,7 +330,4 @@ nft_collection_daily_stats --> nft_collection_latest_stats
 
 nft_transfers --> nft_latest_stats
 nft_transactions --> nft_latest_stats
-
-
-
 @enduml

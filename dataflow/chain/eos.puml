@@ -1,6 +1,9 @@
 @startuml
 !define LIGHTBLUE
 
+skinparam linetype polyline
+skinparam linetype ortho
+
 package bronze #D7CCC8 {
     object transactions{
         block_hash --- block的hash

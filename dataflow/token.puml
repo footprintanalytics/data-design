@@ -2,6 +2,9 @@
 !define LIGHTBLUE
 !includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
 
+skinparam linetype polyline
+skinparam linetype ortho
+
 package bronze #D7CCC8 {
     object chainlink_token_price_daily{
         on_date
@@ -18,7 +21,7 @@ package bronze #D7CCC8 {
         token_symbol
         price
     }
-    object "[[https://dbdocs.io/github/Footprint?table=arbitrum_token_transfers&schema=token_transfers&view=table_structure \n {chain}_token_transfers]]"  as chain_token_transfers{
+    object "{chain}_token_transfers"  as chain_token_transfers{
         on_date
         chain
         from_address
@@ -54,7 +57,7 @@ package silver #F5F5F5 {
         has_price-(true/false)
     }
 
-    object "[[https://dbdocs.io/github/Footprint?table=token_info&schema=token_info&view=table_structure token_info]]" as token_info{
+    object "token_info" as token_info{
         token_slug
         chain
         token_address
@@ -193,5 +196,4 @@ token_price_daily -->token_daily_stats
 token_daily_stats_ck -->token_daily_stats
 chain_token_transfer_daily_stats-->token_chain_daily_stats
 special_token_address_indicators-->token_chain_daily_stats
-
 @enduml

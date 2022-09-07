@@ -2,6 +2,8 @@
 !define LIGHTBLUE
 !includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
 
+skinparam linetype polyline
+skinparam linetype ortho
 
 package bronze #D7CCC8 {
     object external_solana_nft_info
@@ -100,5 +102,4 @@ nft_info --> solana_nft_transfers
 nft_info --> solana_nft_protocol_marketplace_transactions
 token_price_5min_all --> solana_nft_protocol_marketplace_transactions
 solana_nft_transfers --> nft_transfers
-
 @enduml

@@ -2,6 +2,9 @@
 !define LIGHTBLUE
 !includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
 
+skinparam linetype polyline
+skinparam linetype ortho
+
 
 package protocol {
     object contract_info{
@@ -92,6 +95,4 @@ protocol_info <..> token_info: n:n
 
 nft_collection_info --> nft_info: 1:n
 nft_info --> nft_token_attributes: 1:n
-
-
 @enduml

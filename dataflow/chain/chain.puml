@@ -2,8 +2,11 @@
 !define LIGHTBLUE
 !includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
 
+skinparam linetype polyline
+skinparam linetype ortho
+
 package bronze #D7CCC8 {
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_transactions \n{chain}_transactions]]" as raw_transactions{
+    object "{chain}_transactions" as raw_transactions{
         block_timestamp
         hash
         block_hash
@@ -16,7 +19,7 @@ package bronze #D7CCC8 {
         gas_price
     }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_token_transfers \n{chain}_token_transfers]]" as raw_token_transfers{
+    object "{chain}_token_transfers" as raw_token_transfers{
         block_timestamp
         block_hash
         transaction_hash
@@ -26,7 +29,7 @@ package bronze #D7CCC8 {
         value
     }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_logs \n{chain}_logs]]" as raw_logs{
+    object "{chain}_logs" as raw_logs{
         block_timestamp
         block_number
         block_hash
@@ -37,14 +40,14 @@ package bronze #D7CCC8 {
         data
         topics
     }
-        object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=chainlink_token_price_daily chainlink_token_price_daily]]" as chainlink_token_price_daily{
+        object "chainlink_token_price_daily" as chainlink_token_price_daily{
         on_date
         token_address
         chain
         token_symbol
         price
     }
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=coingecko_token_price_daily coingecko_token_price_daily]]" as coingecko_token_price_daily{
+    object "coingecko_token_price_daily" as coingecko_token_price_daily{
         on_date
         coin_gecko_id
         token_address
@@ -53,7 +56,7 @@ package bronze #D7CCC8 {
         price
     }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=token_transfers_v3 token_transfers_v3]]" as token_transfers_v3{
+    object "token_transfers_v3" as token_transfers_v3{
         block_timestamp
         signature
         block_hash
@@ -69,7 +72,7 @@ package bronze #D7CCC8 {
 
 package silver #F5F5F5 {
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=solana_dex_pool_accounts solana_dex_pool_accounts]]" as solana_dex_pool_accounts{
+    object "solana_dex_pool_accounts" as solana_dex_pool_accounts{
         pool_address
         pool_name
         token_account
@@ -77,7 +80,7 @@ package silver #F5F5F5 {
         token_symbol
     }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=dex_token_price_daily dex_token_price_daily]]" as dex_token_price_daily{
+    object "dex_token_price_daily" as dex_token_price_daily{
         on_date
         token_address
         chain
@@ -85,7 +88,7 @@ package silver #F5F5F5 {
         price
     }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_transactions chain_transactions]]" as chain_transactions{
+    object "chain_transactions" as chain_transactions{
         block_timestamp
         block_date
         hash
@@ -98,7 +101,7 @@ package silver #F5F5F5 {
         gas_price
     }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_token_transfers \n{chain}_token_transfers]]" as chain_token_transfers{
+    object "{chain}_token_transfers" as chain_token_transfers{
         block_timestamp
         block_date
         block_hash
@@ -115,7 +118,7 @@ package silver #F5F5F5 {
         token_price
      }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ethereum_logs \n{chain}_logs]]" as chain_logs {
+    object "{chain}_logs" as chain_logs {
         block_timestamp
         block_number
         block_hash
@@ -130,7 +133,7 @@ package silver #F5F5F5 {
         topic4
     }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ud_solana_token_transfers ud_solana_token_transfers]]" as ud_solana_token_transfers{
+    object "ud_solana_token_transfers" as ud_solana_token_transfers{
         block_timestamp
         block_hash
         transaction_hash
@@ -142,7 +145,7 @@ package silver #F5F5F5 {
         value
     }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=solana_token_transfers solana_token_transfers]]" as solana_token_transfers{
+    object "solana_token_transfers" as solana_token_transfers{
         block_timestamp
         block_date
         transaction_hash
@@ -161,7 +164,7 @@ package silver #F5F5F5 {
         to_pre_token_balance
         to_post_token_balance
     }
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=token_price_daily token_price_daily]]" as token_price_daily{
+    object "token_price_daily" as token_price_daily{
         on_date
         token_address
         chain
@@ -170,13 +173,13 @@ package silver #F5F5F5 {
         price
      }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=solana_token_price solana_token_price]]" as solana_token_price{
+    object "solana_token_price" as solana_token_price{
         on_date
         token_address
         token_symbol
         price
     }
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=solana_swap_cashflow solana_swap_cashflow]]" as solana_swap_cashflow{
+    object "solana_swap_cashflow" as solana_swap_cashflow{
         block_timestamp
         block_date
         transaction_hash
@@ -191,7 +194,7 @@ package silver #F5F5F5 {
         token_1_value
     }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=ud_stepn_token_transfers ud_stepn_token_transfers]]" as ud_stepn_token_transfers{
+    object "ud_stepn_token_transfers" as ud_stepn_token_transfers{
         block_timestamp
         transaction_hash
         block_hash
