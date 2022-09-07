@@ -103,12 +103,15 @@ package silver #F5F5F5 {
         block_date
         block_number
         log_index
-        token_address
+'        +token_address
+        +collection_slug
+        +collection_contract_address
         from_address
         to_address
         nft_token_id: string
         amount_raw
         internal_index
+        transfer_type-(mint/burn/sale/transfer)
     }
     object nft_info  {
         chain
@@ -151,6 +154,7 @@ package gold #FFECB3 {
     object nft_collection_transfers_daily_stats{
         on_date
         chain
+        +collection_slug
         collection_contract_address
         number_of_holders
         number_of_transactions
@@ -234,29 +238,38 @@ package gold #FFECB3 {
         volume_30d
     }
 
-    object "[[https://www.footprint.network/@Footprint/Table-Info-Dashboard?table_name=nft_collection_daily_stats nft_latest_stats]]" as nft_latest_stats  {
+    object nft_latest_stats  {
         ..core..
-        on_date
-        chain
         collection_slug
+        chain
         collection_contract_address
-        collection_name
         nft_token_id
-        longest_hold_time
-        current_hold_time
-        date_of_birth
-        past_owners
+        on_date
+        collection_name
+        longest_hold_time-(unit:second)
+        current_hold_time-(unit:second)
+        mint_block_timestamp
+        number_of_past_owners
+        max_price_amount
+        avg_price_amount
+        min_price_amount
+        latest_price_amount
+        amount_currency
         max_price
-        min_price
         avg_price
-        number_of_sales
+        min_price
         latest_price
+        number_of_sales_transactions
         ..extend..
-        last_price
         max_price_7d
         max_price_30d
         max_price_3m
         max_price_1y
+        amount_currency
+        max_price_amount_7d
+        max_price_amount_30d
+        max_price_amount_3m
+        max_price_amount_1y
         number_of_sales_transactions_7d
         number_of_sales_transactions_30d
         number_of_sales_transactions_3m

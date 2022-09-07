@@ -56,6 +56,7 @@ package silver #F5F5F5 {
         protocol_name
         protocol_type
         logo
+        launch_time
     }
 
     object protocol_transactions {
