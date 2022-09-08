@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="2408px" preserveAspectRatio="none" style="width:1795px;height:2408px;background:#FFFFFF;" version="1.1" viewBox="0 0 1795 2408" width="1795px" zoomAndPan="magnify"><defs/><g><!--MD5=[439932edaf1bfa66055f748d0695be9d]
+cluster bronze--><g id="cluster_bronze"><path d="M1402.5,129 L1458.5,129 A3.75,3.75 0 0 1 1461,131.5 L1468,151.2969 L1581.5,151.2969 A2.5,2.5 0 0 1 1584,153.7969 L1584,210.5 A2.5,2.5 0 0 1 1581.5,213 L1402.5,213 A2.5,2.5 0 0 1 1400,210.5 L1400,131.5 A2.5,2.5 0 0 1 1402.5,129 " fill="#D7CCC8" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="1400" x2="1468" y1="151.2969" y2="151.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="55" x="1404" y="143.9951">bronze</text></g><!--MD5=[a74d0cb6d76ed742f695ce864f5f8d2c]
+cluster silver--><g id="cluster_silver"><path d="M8.5,6 L53.5,6 A3.75,3.75 0 0 1 56,8.5 L63,28.2969 L1373.5,28.2969 A2.5,2.5 0 0 1 1376,30.7969 L1376,1195.5 A2.5,2.5 0 0 1 1373.5,1198 L8.5,1198 A2.5,2.5 0 0 1 6,1195.5 L6,8.5 A2.5,2.5 0 0 1 8.5,6 " fill="#F5F5F5" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="63" y1="28.2969" y2="28.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="44" x="10" y="20.9951">silver</text></g><!--MD5=[cde04f4789f21c8cb0c69b4ca2d52d25]
+cluster gold--><g id="cluster_gold"><path d="M334.5,1222 L370.5,1222 A3.75,3.75 0 0 1 373,1224.5 L380,1244.2969 L1785.5,1244.2969 A2.5,2.5 0 0 1 1788,1246.7969 L1788,2398.5 A2.5,2.5 0 0 1 1785.5,2401 L334.5,2401 A2.5,2.5 0 0 1 332,2398.5 L332,1224.5 A2.5,2.5 0 0 1 334.5,1222 " fill="#FFECB3" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="332" x2="380" y1="1244.2969" y2="1244.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="35" x="336" y="1236.9951">gold</text></g><!--MD5=[d6c0d94c205cff4eab7495dd5b00f153]
+cluster list--><g id="cluster_list"><path d="M1348.5,1424.5 L1376.5,1424.5 A3.75,3.75 0 0 1 1379,1427 L1386,1446.7969 L1761.5,1446.7969 A2.5,2.5 0 0 1 1764,1449.2969 L1764,1549 A2.5,2.5 0 0 1 1761.5,1551.5 L1348.5,1551.5 A2.5,2.5 0 0 1 1346,1549 L1346,1427 A2.5,2.5 0 0 1 1348.5,1424.5 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="1346" x2="1386" y1="1446.7969" y2="1446.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="27" x="1350" y="1439.4951">list</text></g><g id="elem_chain_token_transfers"><rect fill="#CCCCCC" height="32.8047" style="stroke:#AAAAAA;stroke-width:0.5;" width="152" x="1416" y="164"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="138" x="1423" y="176.2104">{chain}_token_transfers</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="1417" x2="1567" y1="180.8047" y2="180.8047"/></g><g id="elem_contract_info"><rect fill="#CCCCCC" height="63.2188" style="stroke:#AAAAAA;stroke-width:0.5;" width="108" x="1100" y="41"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="72" x="1118" y="53.2104">contract_info</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="1101" x2="1207" y1="57.8047" y2="57.8047"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="30" x="1106" y="72.0151">chain</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="74" x="1106" y="84.8198">protocol_slug</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="96" x="1106" y="97.6245">contract_address</text></g><g id="elem_nft_collection_info"><rect fill="#CCCCCC" height="229.6797" style="stroke:#AAAAAA;stroke-width:0.5;" width="227" x="536.5" y="257"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="102" x="599" y="269.2104">nft_collection_info</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="537.5" x2="762.5" y1="273.8047" y2="273.8047"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="30" x="542.5" y="288.0151">chain</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="542.5" y="300.8198">collection_slug</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="93" x="542.5" y="313.6245">collection_name</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="96" x="542.5" y="326.4292">contract_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="215" x="542.5" y="339.2339">standard-(ERC1155/ERC721/Metaplex)</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="24" x="542.5" y="352.0386">logo</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="121" x="542.5" y="364.8433">collection_created_at</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="62" x="542.5" y="377.6479">description</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="68" x="542.5" y="390.4526">total_supply</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="60" x="542.5" y="403.2573">discord_url</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="65" x="542.5" y="416.062">website_url</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="56" x="542.5" y="428.8667">image_url</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="72" x="542.5" y="441.6714">telegram_url</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="120" x="542.5" y="454.4761">instagram_username</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="111" x="542.5" y="467.2808">medium_username</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="100" x="542.5" y="480.0854">twitter_username</text></g><g id="elem_mkt_matched_event"><rect fill="#CCCCCC" height="32.8047" style="stroke:#AAAAAA;stroke-width:0.5;" width="373" x="967.5" y="164"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="359" x="974.5" y="176.2104">{chain}_{marketplace}_{contract_name}_evt_{match_event}</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="968.5" x2="1339.5" y1="180.8047" y2="180.8047"/></g><g id="elem_transfer_batch_event"><rect fill="#CCCCCC" height="32.8047" style="stroke:#AAAAAA;stroke-width:0.5;" width="220" x="281" y="355.5"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="206" x="288" y="367.7104">{chain}_erc1155_evt_TransferBatch</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="282" x2="500" y1="372.3047" y2="372.3047"/></g><g id="elem_transfer_single_event"><rect fill="#CCCCCC" height="32.8047" style="stroke:#AAAAAA;stroke-width:0.5;" width="224" x="22" y="355.5"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="210" x="29" y="367.7104">{chain}_erc1155_evt_TransferSingle</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="23" x2="245" y1="372.3047" y2="372.3047"/></g><g id="elem_chain_721_token_transfers"><rect fill="#CCCCCC" height="152.8516" style="stroke:#AAAAAA;stroke-width:0.5;" width="197" x="780.5" y="656"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="183" x="787.5" y="668.2104">{chain}_erc721_token_transfers</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="781.5" x2="976.5" y1="672.8047" y2="672.8047"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="95" x="786.5" y="687.0151">transaction_hash</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="96" x="786.5" y="699.8198">block_timestamp</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="79" x="786.5" y="712.6245">block_number</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="55" x="786.5" y="725.4292">log_index</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="786.5" y="738.2339">token_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="77" x="786.5" y="751.0386">from_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="62" x="786.5" y="763.8433">to_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="48" x="786.5" y="776.6479">id: string</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="69" x="786.5" y="789.4526">amount_raw</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="81" x="786.5" y="802.2573">internal_index</text></g><g id="elem_chain_1155_token_transfers"><rect fill="#CCCCCC" height="178.4609" style="stroke:#AAAAAA;stroke-width:0.5;" width="204" x="289" y="643.5"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="190" x="296" y="655.7104">{chain}_erc1155_token_transfers</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="290" x2="492" y1="660.3047" y2="660.3047"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="95" x="295" y="674.5151">transaction_hash</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="96" x="295" y="687.3198">block_timestamp</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="79" x="295" y="700.1245">block_number</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="55" x="295" y="712.9292">log_index</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="295" y="725.7339">token_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="48" x="295" y="738.5386">operator</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="77" x="295" y="751.3433">from_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="62" x="295" y="764.1479">to_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="48" x="295" y="776.9526">id: string</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="69" x="295" y="789.7573">amount_raw</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="81" x="295" y="802.562">internal_index</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="26" x="295" y="815.3667">type</text></g><g id="elem_token_price_5min"><rect fill="#CCCCCC" height="32.8047" style="stroke:#AAAAAA;stroke-width:0.5;" width="114" x="799" y="355.5"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="100" x="806" y="367.7104">token_price_5min</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="800" x2="912" y1="372.3047" y2="372.3047"/></g><g id="elem_protocol_marketplace_transactions"><rect fill="#CCCCCC" height="32.8047" style="stroke:#AAAAAA;stroke-width:0.5;" width="411" x="948.5" y="355.5"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="397" x="955.5" y="367.7104">{chain}_nft_{marketplace_name}_protocol_marketplace_transactions</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="949.5" x2="1358.5" y1="372.3047" y2="372.3047"/></g><g id="elem_nft_transactions"><rect fill="#CCCCCC" height="370.5313" style="stroke:#AAAAAA;stroke-width:0.5;" width="223" x="1023.5" y="547"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="89" x="1090.5" y="559.2104">nft_transactions</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="1024.5" x2="1245.5" y1="563.8047" y2="563.8047"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="95" x="1029.5" y="578.0151">transaction_hash</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="96" x="1029.5" y="590.8198">block_timestamp</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="61" x="1029.5" y="603.6245">block_date</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="79" x="1029.5" y="616.4292">block_number</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="55" x="1029.5" y="629.2339">log_index</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="30" x="1029.5" y="642.0386">chain</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="156" x="1029.5" y="654.8433">collection_contract_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="1029.5" y="667.6479">collection_slug</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="69" x="1029.5" y="680.4526">nft_token_id</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="173" x="1029.5" y="693.2573">marketplace_contract_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="100" x="1029.5" y="706.062">marketplace_slug</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="81" x="1029.5" y="718.8667">internal_index</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="136" x="1029.5" y="731.6714">number_of_nft_token_id</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="72" x="1029.5" y="744.4761">value: (USD)</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="211" x="1029.5" y="757.2808">value_currency: string, default "USD"</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="43" x="1029.5" y="770.0854">amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="98" x="1029.5" y="782.8901">amount_currency</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="200" x="1029.5" y="795.6948">amount_currency_contract_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="84" x="1029.5" y="808.4995">buyer_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="1029.5" y="821.3042">seller_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="68" x="1029.5" y="834.1089">royalty_rate</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="88" x="1029.5" y="846.9136">royalty_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="77" x="1029.5" y="859.7183">royalty_value</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="102" x="1029.5" y="872.5229">platform_fee_rate</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="128" x="1029.5" y="885.3276">platform_fees_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="117" x="1029.5" y="898.1323">platform_fees_value</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="146" x="1029.5" y="910.937">trade_type: bundle/single</text></g><g id="elem_nft_transfers"><rect fill="#CCCCCC" height="204.0703" style="stroke:#AAAAAA;stroke-width:0.5;" width="241" x="758.5" y="978"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="71" x="843.5" y="990.2104">nft_transfers</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="759.5" x2="998.5" y1="994.8047" y2="994.8047"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="30" x="775.5" y="1009.0151">chain</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="95" x="775.5" y="1021.8198">transaction_hash</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="96" x="775.5" y="1034.6245">block_timestamp</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="61" x="775.5" y="1047.4292">block_date</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="79" x="775.5" y="1060.2339">block_number</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="55" x="775.5" y="1073.0386">log_index</text><ellipse cx="769.5" cy="1083.0352" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="775.5" y="1085.8433">collection_slug</text><ellipse cx="769.5" cy="1095.8398" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="156" x="775.5" y="1098.6479">collection_contract_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="77" x="775.5" y="1111.4526">from_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="62" x="775.5" y="1124.2573">to_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="107" x="775.5" y="1137.062">nft_token_id: string</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="69" x="775.5" y="1149.8667">amount_raw</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="81" x="775.5" y="1162.6714">internal_index</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="218" x="775.5" y="1175.4761">transfer_type-(mint/burn/sale/transfer)</text></g><g id="elem_nft_info"><rect fill="#CCCCCC" height="178.4609" style="stroke:#AAAAAA;stroke-width:0.5;" width="168" x="547" y="643.5"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="42" x="610" y="655.7104">nft_info</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="548" x2="714" y1="660.3047" y2="660.3047"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="30" x="553" y="674.5151">chain</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="156" x="553" y="687.3198">collection_contract_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="93" x="553" y="700.1245">collection_name</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="553" y="712.9292">collection_slug</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="56" x="553" y="725.7339">image_url</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="69" x="553" y="738.5386">nft_token_id</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="71" x="553" y="751.3433">token_name</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="126" x="553" y="764.1479">mint_transaction_hash</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="127" x="553" y="776.9526">mint_block_timestamp</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="76" x="553" y="789.7573">mint_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="75" x="553" y="802.562">metadata_uri</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="149" x="553" y="815.3667">metadata : string (to_json)</text></g><g id="elem_nft_token_attributes"><rect fill="#CCCCCC" height="114.4375" style="stroke:#AAAAAA;stroke-width:0.5;" width="168" x="460" y="1023"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="113" x="487.5" y="1035.2104">nft_token_attributes</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="461" x2="627" y1="1039.8047" y2="1039.8047"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="30" x="466" y="1054.0151">chain</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="156" x="466" y="1066.8198">collection_contract_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="69" x="466" y="1079.6245">nft_token_id</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="466" y="1092.4292">collection_slug</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="75" x="466" y="1105.2339">metadata_uri</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="75" x="466" y="1118.0386">attribute_key</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="86" x="466" y="1130.8433">attribute_value</text></g><g id="elem_nft_collection_latest_stats"><rect fill="#CCCCCC" height="32.8047" style="stroke:#AAAAAA;stroke-width:0.5;" width="160" x="757" y="2352"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="146" x="764" y="2364.2104">nft_collection_latest_stats</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="758" x2="916" y1="2368.8047" y2="2368.8047"/></g><g id="elem_nft_collection_transfers_daily_stats"><rect fill="#CCCCCC" height="152.8516" style="stroke:#AAAAAA;stroke-width:0.5;" width="211" x="603.5" y="1421"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="197" x="610.5" y="1433.2104">nft_collection_transfers_daily_stats</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="604.5" x2="813.5" y1="1437.8047" y2="1437.8047"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="46" x="620.5" y="1452.0151">on_date</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="30" x="620.5" y="1464.8198">chain</text><ellipse cx="614.5" cy="1474.8164" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="620.5" y="1477.6245">collection_slug</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="156" x="620.5" y="1490.4292">collection_contract_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="109" x="620.5" y="1503.2339">number_of_holders</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="135" x="620.5" y="1516.0386">number_of_transactions</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="166" x="620.5" y="1528.8433">number_of_mint_transactions</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="166" x="620.5" y="1541.6479">number_of_burn_transactions</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="185" x="620.5" y="1554.4526">number_of_transfer_transactions</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="71" x="620.5" y="1567.2573">total_minted</text></g><g id="elem_marketplace_nft_collection_daily_stats"><rect fill="#CCCCCC" height="421.75" style="stroke:#AAAAAA;stroke-width:0.5;" width="232" x="850" y="1286.5"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="218" x="857" y="1298.7104">marketplace_nft_collection_daily_stats</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="851" x2="1081" y1="1303.3047" y2="1303.3047"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="856" y="1317.5151">collection_slug</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="46" x="856" y="1330.3198">on_date</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="30" x="856" y="1343.1245">chain</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="156" x="856" y="1355.9292">collection_contract_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="100" x="856" y="1368.7339">marketplace_slug</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="110" x="856" y="1381.5386">marketplace_name</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="93" x="856" y="1394.3433">collection_name</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="106" x="856" y="1407.1479">number_of_buyers</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="105" x="856" y="1419.9526">number_of_sellers</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="171" x="856" y="1432.7573">number_of_sales_transactions</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="98" x="856" y="1445.562">amount_currency</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="92" x="856" y="1458.3667">volume_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="108" x="856" y="1471.1714">max_price_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="104" x="856" y="1483.9761">avg_price_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="104" x="856" y="1496.7808">min_price_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="108" x="856" y="1509.5854">floor_price_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="175" x="856" y="1522.3901">sum_of_platform_fees_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="172" x="856" y="1535.1948">avg_of_platform_fees_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="135" x="856" y="1547.9995">sum_of_royalty_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="132" x="856" y="1560.8042">avg_of_royalty_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="43" x="856" y="1573.6089">volume</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="59" x="856" y="1586.4136">max_price</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="55" x="856" y="1599.2183">avg_price</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="55" x="856" y="1612.0229">min_price</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="59" x="856" y="1624.8276">floor_price</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="164" x="856" y="1637.6323">sum_of_platform_fees_value</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="161" x="856" y="1650.437">avg_of_platform_fees_value</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="124" x="856" y="1663.2417">sum_of_royalty_value</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="121" x="856" y="1676.0464">avg_of_royalty_value</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="73" x="856" y="1688.8511">liquidity_rate</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="66" x="856" y="1701.6558">market_cap</text></g><g id="elem_nft_collection_daily_stats"><rect fill="#CCCCCC" height="493.7734" style="stroke:#AAAAAA;stroke-width:0.5;" width="197" x="738.5" y="1798"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="141" x="766.5" y="1810.2104">nft_collection_daily_stats</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="739.5" x2="934.5" y1="1814.8047" y2="1814.8047"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="744.5" y="1845.8198">collection_slug</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="46" x="744.5" y="1858.6245">on_date</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="30" x="744.5" y="1871.4292">chain</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="156" x="744.5" y="1884.2339">collection_contract_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="93" x="744.5" y="1897.0386">collection_name</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="109" x="744.5" y="1909.8433">number_of_holders</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="106" x="744.5" y="1922.6479">number_of_buyers</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="105" x="744.5" y="1935.4526">number_of_sellers</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="135" x="744.5" y="1948.2573">number_of_transactions</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="166" x="744.5" y="1961.062">number_of_mint_transactions</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="166" x="744.5" y="1973.8667">number_of_burn_transactions</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="171" x="744.5" y="1986.6714">number_of_sales_transactions</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="185" x="744.5" y="1999.4761">number_of_transfer_transactions</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="71" x="744.5" y="2012.2808">total_minted</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="73" x="744.5" y="2025.0854">liquidity_rate</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="98" x="744.5" y="2037.8901">amount_currency</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="92" x="744.5" y="2050.6948">volume_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="108" x="744.5" y="2063.4995">max_price_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="104" x="744.5" y="2076.3042">avg_price_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="104" x="744.5" y="2089.1089">min_price_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="108" x="744.5" y="2101.9136">floor_price_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="135" x="744.5" y="2114.7183">sum_of_royalty_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="115" x="744.5" y="2127.5229">market_cap_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="43" x="744.5" y="2140.3276">volume</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="59" x="744.5" y="2153.1323">max_price</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="55" x="744.5" y="2165.937">avg_price</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="55" x="744.5" y="2178.7417">min_price</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="59" x="744.5" y="2191.5464">floor_price</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="124" x="744.5" y="2204.3511">sum_of_royalty_value</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="66" x="744.5" y="2217.1558">market_cap</text><line style="stroke:#AAAAAA;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="739.5" x2="824.5" y1="1829.207" y2="1829.207"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="25" x="824.5" y="1832.5151">core</text><line style="stroke:#AAAAAA;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="849.5" x2="934.5" y1="1829.207" y2="1829.207"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="157" x="744.5" y="2246.7651">market_cap_7d_pct_change</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="164" x="744.5" y="2259.5698">market_cap_30d_pct_change</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="63" x="744.5" y="2272.3745">volume_7d</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="70" x="744.5" y="2285.1792">volume_30d</text><line style="stroke:#AAAAAA;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="739.5" x2="816.5" y1="2230.1523" y2="2230.1523"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="41" x="816.5" y="2233.4604">extend</text><line style="stroke:#AAAAAA;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="857.5" x2="934.5" y1="2230.1523" y2="2230.1523"/></g><g id="elem_nft_latest_stats"><rect fill="#CCCCCC" height="480.9688" style="stroke:#AAAAAA;stroke-width:0.5;" width="210" x="1117" y="1257"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="86" x="1179" y="1269.2104">nft_latest_stats</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="1118" x2="1326" y1="1273.8047" y2="1273.8047"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="1123" y="1304.8198">collection_slug</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="30" x="1123" y="1317.6245">chain</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="156" x="1123" y="1330.4292">collection_contract_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="69" x="1123" y="1343.2339">nft_token_id</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="46" x="1123" y="1356.0386">on_date</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="93" x="1123" y="1368.8433">collection_name</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="181" x="1123" y="1381.6479">longest_hold_time-(unit:second)</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="179" x="1123" y="1394.4526">current_hold_time-(unit:second)</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="127" x="1123" y="1407.2573">mint_block_timestamp</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="138" x="1123" y="1420.062">number_of_past_owners</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="108" x="1123" y="1432.8667">max_price_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="104" x="1123" y="1445.6714">avg_price_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="104" x="1123" y="1458.4761">min_price_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="115" x="1123" y="1471.2808">latest_price_amount</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="98" x="1123" y="1484.0854">amount_currency</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="59" x="1123" y="1496.8901">max_price</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="55" x="1123" y="1509.6948">avg_price</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="55" x="1123" y="1522.4995">min_price</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="66" x="1123" y="1535.3042">latest_price</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="171" x="1123" y="1548.1089">number_of_sales_transactions</text><line style="stroke:#AAAAAA;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="1118" x2="1209.5" y1="1288.207" y2="1288.207"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="25" x="1209.5" y="1291.5151">core</text><line style="stroke:#AAAAAA;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="1234.5" x2="1326" y1="1288.207" y2="1288.207"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="79" x="1123" y="1577.7183">max_price_7d</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="86" x="1123" y="1590.5229">max_price_30d</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="1123" y="1603.3276">max_price_3m</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="79" x="1123" y="1616.1323">max_price_1y</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="98" x="1123" y="1628.937">amount_currency</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="128" x="1123" y="1641.7417">max_price_amount_7d</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="135" x="1123" y="1654.5464">max_price_amount_30d</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="132" x="1123" y="1667.3511">max_price_amount_3m</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="128" x="1123" y="1680.1558">max_price_amount_1y</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="191" x="1123" y="1692.9604">number_of_sales_transactions_7d</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="198" x="1123" y="1705.7651">number_of_sales_transactions_30d</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="195" x="1123" y="1718.5698">number_of_sales_transactions_3m</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="191" x="1123" y="1731.3745">number_of_sales_transactions_1y</text><line style="stroke:#AAAAAA;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="1118" x2="1201.5" y1="1561.1055" y2="1561.1055"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="41" x="1201.5" y="1564.4136">extend</text><line style="stroke:#AAAAAA;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="1242.5" x2="1326" y1="1561.1055" y2="1561.1055"/></g><g id="elem_nft_collection_attributes_latest_stats"><rect fill="#CCCCCC" height="140.0469" style="stroke:#AAAAAA;stroke-width:0.5;" width="220" x="348" y="1427.5"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="206" x="355" y="1439.7104">nft_collection_attributes_latest_stats</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="349" x2="567" y1="1444.3047" y2="1444.3047"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="46" x="354" y="1458.5151">on_date</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="30" x="354" y="1471.3198">chain</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="354" y="1484.1245">collection_slug</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="156" x="354" y="1496.9292">collection_contract_address</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="93" x="354" y="1509.7339">collection_name</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="75" x="354" y="1522.5386">attribute_key</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="86" x="354" y="1535.3433">attribute_value</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="62" x="354" y="1548.1479">mint_count</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="69" x="354" y="1560.9526">current_rate</text></g><g id="elem_nft_collection_list"><rect fill="#CCCCCC" height="63.2188" style="stroke:#AAAAAA;stroke-width:0.5;" width="187" x="1560.5" y="1466"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="97" x="1605.5" y="1478.2104">nft_collection_list</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="1561.5" x2="1746.5" y1="1482.8047" y2="1482.8047"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="1566.5" y="1497.0151">collection_slug</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="30" x="1566.5" y="1509.8198">chain</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="175" x="1566.5" y="1522.6245">list-(top_collection/latest_stats)</text></g><g id="elem_nft_list"><rect fill="#CCCCCC" height="76.0234" style="stroke:#AAAAAA;stroke-width:0.5;" width="163" x="1362.5" y="1459.5"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="37" x="1425.5" y="1471.7104">nft_list</text><line style="stroke:#AAAAAA;stroke-width:0.5;" x1="1363.5" x2="1524.5" y1="1476.3047" y2="1476.3047"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="83" x="1368.5" y="1490.5151">collection_slug</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="69" x="1368.5" y="1503.3198">nft_token_id</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="30" x="1368.5" y="1516.1245">chain</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="151" x="1368.5" y="1528.9292">list-(top_sales/latest_stats)</text></g><!--MD5=[9ba3f299d3da75a504f5f773b601f5f3]
+link contract_info to mkt_matched_event--><g id="link_contract_info_mkt_matched_event"><path codeLine="145" d="M1154,104.03 C1154,104.03 1154,158.81 1154,158.81 " fill="none" id="contract_info-to-mkt_matched_event" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1154,163.81,1158,154.81,1154,158.81,1150,154.81,1154,163.81" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[794b373ce101c11091d86340d2375256]
+link transfer_batch_event to chain_1155_token_transfers--><g id="link_transfer_batch_event_chain_1155_token_transfers"><path codeLine="147" d="M391,388.9 C391,388.9 391,638.38 391,638.38 " fill="none" id="transfer_batch_event-to-chain_1155_token_transfers" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="391,643.38,395,634.38,391,638.38,387,634.38,391,643.38" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[8323c1daed9f22fe60fcba13e8119ef2]
+link transfer_single_event to chain_1155_token_transfers--><g id="link_transfer_single_event_chain_1155_token_transfers"><path codeLine="148" d="M134,388.93 C134,460.3 134,733 134,733 C134,733 283.688,733 283.688,733 " fill="none" id="transfer_single_event-to-chain_1155_token_transfers" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="288.688,733,279.688,729,283.688,733,279.688,737,288.688,733" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[ac78e1f56f040195081c87e6e382a3c5]
+link chain_1155_token_transfers to nft_transfers--><g id="link_chain_1155_token_transfers_nft_transfers"><path codeLine="149" d="M476.5,821.53 C476.5,899.69 476.5,1001 476.5,1001 C476.5,1001 753.237,1001 753.237,1001 " fill="none" id="chain_1155_token_transfers-to-nft_transfers" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="758.237,1001,749.237,997,753.237,1001,749.237,1005,758.237,1001" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[fc46d820a6fab0abe86fec832eaa4b73]
+link nft_token_attributes to nft_collection_attributes_latest_stats--><g id="link_nft_token_attributes_nft_collection_attributes_latest_stats"><path codeLine="310" d="M514,1137.18 C514,1137.18 514,1422.455 514,1422.455 " fill="none" id="nft_token_attributes-to-nft_collection_attributes_latest_stats" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="514,1427.455,518,1418.455,514,1422.455,510,1418.455,514,1427.455" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[fb2dda57e737b52fb31b5005b773f9be]
+link mkt_matched_event to protocol_marketplace_transactions--><g id="link_mkt_matched_event_protocol_marketplace_transactions"><path codeLine="311" d="M1154,197.16 C1154,197.16 1154,350.24 1154,350.24 " fill="none" id="mkt_matched_event-to-protocol_marketplace_transactions" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1154,355.24,1158,346.24,1154,350.24,1150,346.24,1154,355.24" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[7d059ea34665d6d68fa89c71817bd71a]
+link chain_token_transfers to protocol_marketplace_transactions--><g id="link_chain_token_transfers_protocol_marketplace_transactions"><path codeLine="312" d="M1415.6,181 C1381.99,181 1350,181 1350,181 C1350,181 1350,350.38 1350,350.38 " fill="none" id="chain_token_transfers-to-protocol_marketplace_transactions" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1350,355.38,1354,346.38,1350,350.38,1346,346.38,1350,355.38" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[3ea735c5bdc3b1917ce28971c05f68f9]
+link chain_token_transfers to chain_721_token_transfers--><g id="link_chain_token_transfers_chain_721_token_transfers"><path codeLine="313" d="M1470.75,197.19 C1470.75,265.09 1470.75,517 1470.75,517 C1470.75,517 963,517 963,517 C963,517 963,650.92 963,650.92 " fill="none" id="chain_token_transfers-to-chain_721_token_transfers" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="963,655.92,967,646.92,963,650.92,959,646.92,963,655.92" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[9025ba3d7d3df35b662c56d943048c4d]
+link token_price_5min to protocol_marketplace_transactions--><g id="link_token_price_5min_protocol_marketplace_transactions"><path codeLine="314" d="M913.105,372 C913.105,372 943.299,372 943.299,372 " fill="none" id="token_price_5min-to-protocol_marketplace_transactions" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="948.299,372,939.299,368,943.299,372,939.299,376,948.299,372" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[de1c92585f66a0de926f268835b50553]
+link protocol_marketplace_transactions to nft_transactions--><g id="link_protocol_marketplace_transactions_nft_transactions"><path codeLine="315" d="M1135,388.9 C1135,388.9 1135,541.78 1135,541.78 " fill="none" id="protocol_marketplace_transactions-to-nft_transactions" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1135,546.78,1139,537.78,1135,541.78,1131,537.78,1135,546.78" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[71a37e2a371789db843cdaa70ce6b7e0]
+link nft_collection_info to chain_721_token_transfers--><g id="link_nft_collection_info_chain_721_token_transfers"><path codeLine="316" d="M763.792,438 C779.151,438 789.75,438 789.75,438 C789.75,438 789.75,650.89 789.75,650.89 " fill="none" id="nft_collection_info-to-chain_721_token_transfers" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="789.75,655.89,793.75,646.89,789.75,650.89,785.75,646.89,789.75,655.89" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[d77ee676ad66de18940ece4887ad819f]
+link nft_collection_info to nft_info--><g id="link_nft_collection_info_nft_info"><path codeLine="317" d="M631,487.06 C631,487.06 631,638.35 631,638.35 " fill="none" id="nft_collection_info-to-nft_info" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="631,643.35,635,634.35,631,638.35,627,634.35,631,643.35" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[8b28772fb3f58a42ef1b26c163b7522b]
+link nft_collection_info to nft_transactions--><g id="link_nft_collection_info_nft_transactions"><path codeLine="319" d="M736.75,487.28 C736.75,542.17 736.75,596 736.75,596 C736.75,596 1018.27,596 1018.27,596 " fill="none" id="nft_collection_info-to-nft_transactions" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1023.27,596,1014.27,592,1018.27,596,1014.27,600,1023.27,596" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[76ff3837941119a66c6edbc55b85e1e4]
+link nft_info to nft_token_attributes--><g id="link_nft_info_nft_token_attributes"><path codeLine="321" d="M587.5,821.54 C587.5,821.54 587.5,1017.79 587.5,1017.79 " fill="none" id="nft_info-to-nft_token_attributes" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="587.5,1022.79,591.5,1013.79,587.5,1017.79,583.5,1013.79,587.5,1022.79" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[7648c652fb9b0fbc3dc648c74fac6304]
+link chain_721_token_transfers to nft_transfers--><g id="link_chain_721_token_transfers_nft_transfers"><path codeLine="322" d="M879,809.19 C879,809.19 879,972.79 879,972.79 " fill="none" id="chain_721_token_transfers-to-nft_transfers" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="879,977.79,883,968.79,879,972.79,875,968.79,879,977.79" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[8f5584f3e6374b994f0f39b4badeabc3]
+link nft_transfers to nft_collection_transfers_daily_stats--><g id="link_nft_transfers_nft_collection_transfers_daily_stats"><path codeLine="323" d="M786.5,1182.13 C786.5,1182.13 786.5,1415.97 786.5,1415.97 " fill="none" id="nft_transfers-to-nft_collection_transfers_daily_stats" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="786.5,1420.971,790.5,1411.971,786.5,1415.971,782.5,1411.971,786.5,1420.971" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[3b9275b0bad79c277bd8cf52fc91394b]
+link nft_transfers to marketplace_nft_collection_daily_stats--><g id="link_nft_transfers_marketplace_nft_collection_daily_stats"><path codeLine="324" d="M899.833,1182.13 C899.833,1182.13 899.833,1281.45 899.833,1281.45 " fill="none" id="nft_transfers-to-marketplace_nft_collection_daily_stats" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="899.833,1286.45,903.833,1277.45,899.833,1281.45,895.833,1277.45,899.833,1286.45" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[95f65ba5fa031047de77a7433d13c46e]
+link nft_transactions to marketplace_nft_collection_daily_stats--><g id="link_nft_transactions_marketplace_nft_collection_daily_stats"><path codeLine="325" d="M1052.75,918.17 C1052.75,918.17 1052.75,1281.23 1052.75,1281.23 " fill="none" id="nft_transactions-to-marketplace_nft_collection_daily_stats" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1052.75,1286.23,1056.75,1277.23,1052.75,1281.23,1048.75,1277.23,1052.75,1286.23" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[35f3d6f7512d5cf290ca69aa75b8e5a2]
+link nft_collection_transfers_daily_stats to nft_collection_daily_stats--><g id="link_nft_collection_transfers_daily_stats_nft_collection_daily_stats"><path codeLine="326" d="M776.5,1574.204 C776.5,1574.204 776.5,1792.943 776.5,1792.943 " fill="none" id="nft_collection_transfers_daily_stats-to-nft_collection_daily_stats" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="776.5,1797.943,780.5,1788.943,776.5,1792.943,772.5,1788.943,776.5,1797.943" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[7b7021bfdc5a1f9c6d4bbdb06f35f147]
+link marketplace_nft_collection_daily_stats to nft_collection_daily_stats--><g id="link_marketplace_nft_collection_daily_stats_nft_collection_daily_stats"><path codeLine="327" d="M892.75,1708.786 C892.75,1708.786 892.75,1792.977 892.75,1792.977 " fill="none" id="marketplace_nft_collection_daily_stats-to-nft_collection_daily_stats" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="892.75,1797.977,896.75,1788.977,892.75,1792.977,888.75,1788.977,892.75,1797.977" style="stroke:#000000;stroke-width:1.0;"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="151" x="740.75" y="1748.0914">aggregate all marketplace</text></g><!--MD5=[cc125c966daaed052505b2098b0d84f8]
+link nft_collection_daily_stats to nft_collection_latest_stats--><g id="link_nft_collection_daily_stats_nft_collection_latest_stats"><path codeLine="328" d="M837,2292.245 C837,2292.245 837,2346.718 837,2346.718 " fill="none" id="nft_collection_daily_stats-to-nft_collection_latest_stats" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="837,2351.718,841,2342.718,837,2346.718,833,2342.718,837,2351.718" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[f0927d6a1a2ef4e26de714c09838e929]
+link nft_transfers to nft_latest_stats--><g id="link_nft_transfers_nft_latest_stats"><path codeLine="330" d="M949.667,1182.18 C949.667,1228.04 949.667,1272 949.667,1272 C949.667,1272 1111.71,1272 1111.71,1272 " fill="none" id="nft_transfers-to-nft_latest_stats" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1116.71,1272,1107.71,1268,1111.71,1272,1107.71,1276,1116.71,1272" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[7d02f3078a83ada4e6c730b1be4c6078]
+link nft_transactions to nft_latest_stats--><g id="link_nft_transactions_nft_latest_stats"><path codeLine="331" d="M1181.75,918.17 C1181.75,918.17 1181.75,1251.78 1181.75,1251.78 " fill="none" id="nft_transactions-to-nft_latest_stats" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1181.75,1256.78,1185.75,1247.78,1181.75,1251.78,1177.75,1247.78,1181.75,1256.78" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[fc90ed146e9a73dce208e751daff2ac3]
+@startuml
+!define LIGHTBLUE
+!includeurl https://static.footprint.network/puml/style.puml
+
+skinparam linetype polyline
+skinparam linetype ortho
+
+package bronze #D7CCC8 {
+    object "{chain}_token_transfers" as chain_token_transfers
+}
+
+package silver #F5F5F5 {
+    object "contract_info" as contract_info  {
+        chain
+        protocol_slug
+        contract_address
+    }
+    object "nft_collection_info" as nft_collection_info {
+        chain
+        collection_slug
+        collection_name
+        contract_address
+        standard-(ERC1155/ERC721/Metaplex)
+        logo
+        collection_created_at
+        description
+		total_supply
+        discord_url
+        website_url
+        image_url
+		telegram_url
+        instagram_username
+        medium_username
+        twitter_username
+    }
+
+
+    object "{chain}_{marketplace}_{contract_name}_evt_{match_event}" as mkt_matched_event
+    object "{chain}_erc1155_evt_TransferBatch" as transfer_batch_event
+    object "{chain}_erc1155_evt_TransferSingle" as transfer_single_event
+
+    object "{chain}_erc721_token_transfers" as chain_721_token_transfers  {
+        transaction_hash
+        block_timestamp
+        block_number
+        log_index
+        token_address
+        from_address
+        to_address
+        id: string
+        amount_raw
+        internal_index
+    }
+
+    object "{chain}_erc1155_token_transfers" as chain_1155_token_transfers  {
+        transaction_hash
+        block_timestamp
+        block_number
+        log_index
+        token_address
+        operator
+        from_address
+        to_address
+        id: string
+        amount_raw
+        internal_index
+        type
+    }
+
+    object token_price_5min
+    object "{chain}_nft_{marketplace_name}_protocol_marketplace_transactions" as  protocol_marketplace_transactions {
+    }
+    object "nft_transactions" as nft_transactions {
+        transaction_hash
+        block_timestamp
+        block_date
+        block_number
+        log_index
+        chain
+        collection_contract_address
+        collection_slug
+        nft_token_id
+        marketplace_contract_address
+        marketplace_slug
+        internal_index
+        number_of_nft_token_id
+        value: (USD)
+        value_currency: string, default "USD"
+        amount
+        amount_currency
+        amount_currency_contract_address
+        buyer_address
+        seller_address
+        royalty_rate
+        royalty_amount
+        royalty_value
+        platform_fee_rate
+        platform_fees_amount
+        platform_fees_value
+        trade_type: bundle/single
+    }
+    object "nft_transfers" as nft_transfers {
+        chain
+        transaction_hash
+        block_timestamp
+        block_date
+        block_number
+        log_index
+'        +token_address
+        +collection_slug
+        +collection_contract_address
+        from_address
+        to_address
+        nft_token_id: string
+        amount_raw
+        internal_index
+        transfer_type-(mint/burn/sale/transfer)
+    }
+    object nft_info  {
+        chain
+        collection_contract_address
+        collection_name
+        collection_slug
+        image_url
+        nft_token_id
+        token_name
+        mint_transaction_hash
+        mint_block_timestamp
+        mint_address
+        metadata_uri
+        metadata : string (to_json)
+    }
+
+    object nft_token_attributes  {
+        chain
+        collection_contract_address
+        nft_token_id
+        collection_slug
+        metadata_uri
+        attribute_key
+        attribute_value
+    }
+}
+
+
+contract_info - -> mkt_matched_event
+
+transfer_batch_event - -> chain_1155_token_transfers
+transfer_single_event - -> chain_1155_token_transfers
+chain_1155_token_transfers - -> nft_transfers
+
+
+package gold #FFECB3 {
+    object "nft_collection_latest_stats" as nft_collection_latest_stats  {
+    }
+
+    object nft_collection_transfers_daily_stats{
+        on_date
+        chain
+        +collection_slug
+        collection_contract_address
+        number_of_holders
+        number_of_transactions
+        number_of_mint_transactions
+        number_of_burn_transactions
+        number_of_transfer_transactions
+        total_minted
+    }
+
+    object marketplace_nft_collection_daily_stats {
+        collection_slug
+        on_date
+        chain
+        collection_contract_address
+        marketplace_slug
+        marketplace_name
+        collection_name
+        number_of_buyers
+        number_of_sellers
+        number_of_sales_transactions
+        amount_currency
+        volume_amount
+        max_price_amount
+        avg_price_amount
+        min_price_amount
+        floor_price_amount
+        sum_of_platform_fees_amount
+        avg_of_platform_fees_amount
+        sum_of_royalty_amount
+        avg_of_royalty_amount
+        volume
+        max_price
+        avg_price
+        min_price
+        floor_price
+        sum_of_platform_fees_value
+        avg_of_platform_fees_value
+        sum_of_royalty_value
+        avg_of_royalty_value
+        liquidity_rate
+        market_cap
+    }
+
+
+    object "nft_collection_daily_stats" as nft_collection_daily_stats  {
+        ..core..
+        collection_slug
+        on_date
+        chain
+        collection_contract_address
+        collection_name
+        number_of_holders
+        number_of_buyers
+        number_of_sellers
+        number_of_transactions
+        number_of_mint_transactions
+        number_of_burn_transactions
+        number_of_sales_transactions
+        number_of_transfer_transactions
+        total_minted
+        liquidity_rate
+        amount_currency
+        volume_amount
+        max_price_amount
+        avg_price_amount
+        min_price_amount
+        floor_price_amount
+        sum_of_royalty_amount
+        market_cap_amount
+        volume
+        max_price
+        avg_price
+        min_price
+        floor_price
+        sum_of_royalty_value
+        market_cap
+        ..extend..
+        market_cap_7d_pct_change
+        market_cap_30d_pct_change
+        volume_7d
+        volume_30d
+    }
+
+    object nft_latest_stats  {
+        ..core..
+        collection_slug
+        chain
+        collection_contract_address
+        nft_token_id
+        on_date
+        collection_name
+        longest_hold_time-(unit:second)
+        current_hold_time-(unit:second)
+        mint_block_timestamp
+        number_of_past_owners
+        max_price_amount
+        avg_price_amount
+        min_price_amount
+        latest_price_amount
+        amount_currency
+        max_price
+        avg_price
+        min_price
+        latest_price
+        number_of_sales_transactions
+        ..extend..
+        max_price_7d
+        max_price_30d
+        max_price_3m
+        max_price_1y
+        amount_currency
+        max_price_amount_7d
+        max_price_amount_30d
+        max_price_amount_3m
+        max_price_amount_1y
+        number_of_sales_transactions_7d
+        number_of_sales_transactions_30d
+        number_of_sales_transactions_3m
+        number_of_sales_transactions_1y
+    }
+
+    object nft_collection_attributes_latest_stats {
+    	on_date
+        chain
+        collection_slug
+        collection_contract_address
+        collection_name
+        attribute_key
+        attribute_value
+        mint_count
+        current_rate
+    }
+
+
+    package list {
+         object nft_collection_list {
+            collection_slug
+            chain
+            list-(top_collection/latest_stats)
+        }
+
+        object nft_list {
+            collection_slug
+            nft_token_id
+            chain
+            list-(top_sales/latest_stats)
+        }
+
+
+
+nft_token_attributes- -> nft_collection_attributes_latest_stats
+mkt_matched_event- -> protocol_marketplace_transactions
+chain_token_transfers - -> protocol_marketplace_transactions
+chain_token_transfers - -> chain_721_token_transfers
+token_price_5min -right-> protocol_marketplace_transactions
+protocol_marketplace_transactions - -> nft_transactions
+nft_collection_info - -> chain_721_token_transfers
+nft_collection_info - -> nft_info
+
+nft_collection_info - -> nft_transactions
+
+nft_info - -> nft_token_attributes
+chain_721_token_transfers - -> nft_transfers
+nft_transfers - -> nft_collection_transfers_daily_stats
+nft_transfers - -> marketplace_nft_collection_daily_stats
+nft_transactions - -> marketplace_nft_collection_daily_stats
+nft_collection_transfers_daily_stats - -> nft_collection_daily_stats
+marketplace_nft_collection_daily_stats - -> nft_collection_daily_stats: aggregate all marketplace
+nft_collection_daily_stats - -> nft_collection_latest_stats
+
+nft_transfers - -> nft_latest_stats
+nft_transactions - -> nft_latest_stats
+@enduml
+
+@startuml
+
+
+
+
+skinparam stereotypeCBackgroundColor 1a66c2
+
+
+
+
+
+
+
+skinparam backgroundColor fff
+
+
+
+
+
+
+
+
+skinparam circledCharacter {
+  radius 8
+  fontSize 11
+  fontName Verdana
+}
+
+skinparam class {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+
+  attributeFontColor 333
+  attributeFontSize 11
+  attributeIconSize 11
+}
+
+
+skinparam actor {
+    backgroundColor 2a86e2
+  borderColor 1a66c2
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam participant {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam collections {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam SequenceBox{
+    backgroundColor e0e0e0
+  borderColor cccccc
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam interface {
+    backgroundColor 2a86e2
+  borderColor 1a66c2
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam component {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam node {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam database {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam queue {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam usecase {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+skinparam activity {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+skinparam sequence {
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+
+  lifeLineBorderColor 2a86e2
+  lifeLineBackgroundColor e0e0e0
+}
+
+skinparam boundary {
+    backgroundColor 2a86e2
+  borderColor 1a66c2
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam control {
+    backgroundColor 2a86e2
+  borderColor 1a66c2
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam entity {
+    backgroundColor 2a86e2
+  borderColor 1a66c2
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam state {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+  startColor 2a86e2
+  endColor 1a66c2
+}
+
+
+skinparam object {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+
+skinparam note {
+    backgroundColor 2a86e2
+  borderColor 1a66c2
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam cloud {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+skinparam rectangle {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam storage {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam linetype polyline
+skinparam linetype ortho
+
+package bronze #D7CCC8 {
+    object "{chain}_token_transfers" as chain_token_transfers
+}
+
+package silver #F5F5F5 {
+    object "contract_info" as contract_info  {
+        chain
+        protocol_slug
+        contract_address
+    }
+    object "nft_collection_info" as nft_collection_info {
+        chain
+        collection_slug
+        collection_name
+        contract_address
+        standard-(ERC1155/ERC721/Metaplex)
+        logo
+        collection_created_at
+        description
+		total_supply
+        discord_url
+        website_url
+        image_url
+		telegram_url
+        instagram_username
+        medium_username
+        twitter_username
+    }
+
+
+    object "{chain}_{marketplace}_{contract_name}_evt_{match_event}" as mkt_matched_event
+    object "{chain}_erc1155_evt_TransferBatch" as transfer_batch_event
+    object "{chain}_erc1155_evt_TransferSingle" as transfer_single_event
+
+    object "{chain}_erc721_token_transfers" as chain_721_token_transfers  {
+        transaction_hash
+        block_timestamp
+        block_number
+        log_index
+        token_address
+        from_address
+        to_address
+        id: string
+        amount_raw
+        internal_index
+    }
+
+    object "{chain}_erc1155_token_transfers" as chain_1155_token_transfers  {
+        transaction_hash
+        block_timestamp
+        block_number
+        log_index
+        token_address
+        operator
+        from_address
+        to_address
+        id: string
+        amount_raw
+        internal_index
+        type
+    }
+
+    object token_price_5min
+    object "{chain}_nft_{marketplace_name}_protocol_marketplace_transactions" as  protocol_marketplace_transactions {
+    }
+    object "nft_transactions" as nft_transactions {
+        transaction_hash
+        block_timestamp
+        block_date
+        block_number
+        log_index
+        chain
+        collection_contract_address
+        collection_slug
+        nft_token_id
+        marketplace_contract_address
+        marketplace_slug
+        internal_index
+        number_of_nft_token_id
+        value: (USD)
+        value_currency: string, default "USD"
+        amount
+        amount_currency
+        amount_currency_contract_address
+        buyer_address
+        seller_address
+        royalty_rate
+        royalty_amount
+        royalty_value
+        platform_fee_rate
+        platform_fees_amount
+        platform_fees_value
+        trade_type: bundle/single
+    }
+    object "nft_transfers" as nft_transfers {
+        chain
+        transaction_hash
+        block_timestamp
+        block_date
+        block_number
+        log_index
+        +collection_slug
+        +collection_contract_address
+        from_address
+        to_address
+        nft_token_id: string
+        amount_raw
+        internal_index
+        transfer_type-(mint/burn/sale/transfer)
+    }
+    object nft_info  {
+        chain
+        collection_contract_address
+        collection_name
+        collection_slug
+        image_url
+        nft_token_id
+        token_name
+        mint_transaction_hash
+        mint_block_timestamp
+        mint_address
+        metadata_uri
+        metadata : string (to_json)
+    }
+
+    object nft_token_attributes  {
+        chain
+        collection_contract_address
+        nft_token_id
+        collection_slug
+        metadata_uri
+        attribute_key
+        attribute_value
+    }
+}
+
+
+contract_info - -> mkt_matched_event
+
+transfer_batch_event - -> chain_1155_token_transfers
+transfer_single_event - -> chain_1155_token_transfers
+chain_1155_token_transfers - -> nft_transfers
+
+
+package gold #FFECB3 {
+    object "nft_collection_latest_stats" as nft_collection_latest_stats  {
+    }
+
+    object nft_collection_transfers_daily_stats{
+        on_date
+        chain
+        +collection_slug
+        collection_contract_address
+        number_of_holders
+        number_of_transactions
+        number_of_mint_transactions
+        number_of_burn_transactions
+        number_of_transfer_transactions
+        total_minted
+    }
+
+    object marketplace_nft_collection_daily_stats {
+        collection_slug
+        on_date
+        chain
+        collection_contract_address
+        marketplace_slug
+        marketplace_name
+        collection_name
+        number_of_buyers
+        number_of_sellers
+        number_of_sales_transactions
+        amount_currency
+        volume_amount
+        max_price_amount
+        avg_price_amount
+        min_price_amount
+        floor_price_amount
+        sum_of_platform_fees_amount
+        avg_of_platform_fees_amount
+        sum_of_royalty_amount
+        avg_of_royalty_amount
+        volume
+        max_price
+        avg_price
+        min_price
+        floor_price
+        sum_of_platform_fees_value
+        avg_of_platform_fees_value
+        sum_of_royalty_value
+        avg_of_royalty_value
+        liquidity_rate
+        market_cap
+    }
+
+
+    object "nft_collection_daily_stats" as nft_collection_daily_stats  {
+        ..core..
+        collection_slug
+        on_date
+        chain
+        collection_contract_address
+        collection_name
+        number_of_holders
+        number_of_buyers
+        number_of_sellers
+        number_of_transactions
+        number_of_mint_transactions
+        number_of_burn_transactions
+        number_of_sales_transactions
+        number_of_transfer_transactions
+        total_minted
+        liquidity_rate
+        amount_currency
+        volume_amount
+        max_price_amount
+        avg_price_amount
+        min_price_amount
+        floor_price_amount
+        sum_of_royalty_amount
+        market_cap_amount
+        volume
+        max_price
+        avg_price
+        min_price
+        floor_price
+        sum_of_royalty_value
+        market_cap
+        ..extend..
+        market_cap_7d_pct_change
+        market_cap_30d_pct_change
+        volume_7d
+        volume_30d
+    }
+
+    object nft_latest_stats  {
+        ..core..
+        collection_slug
+        chain
+        collection_contract_address
+        nft_token_id
+        on_date
+        collection_name
+        longest_hold_time-(unit:second)
+        current_hold_time-(unit:second)
+        mint_block_timestamp
+        number_of_past_owners
+        max_price_amount
+        avg_price_amount
+        min_price_amount
+        latest_price_amount
+        amount_currency
+        max_price
+        avg_price
+        min_price
+        latest_price
+        number_of_sales_transactions
+        ..extend..
+        max_price_7d
+        max_price_30d
+        max_price_3m
+        max_price_1y
+        amount_currency
+        max_price_amount_7d
+        max_price_amount_30d
+        max_price_amount_3m
+        max_price_amount_1y
+        number_of_sales_transactions_7d
+        number_of_sales_transactions_30d
+        number_of_sales_transactions_3m
+        number_of_sales_transactions_1y
+    }
+
+    object nft_collection_attributes_latest_stats {
+    	on_date
+        chain
+        collection_slug
+        collection_contract_address
+        collection_name
+        attribute_key
+        attribute_value
+        mint_count
+        current_rate
+    }
+
+
+    package list {
+         object nft_collection_list {
+            collection_slug
+            chain
+            list-(top_collection/latest_stats)
+        }
+
+        object nft_list {
+            collection_slug
+            nft_token_id
+            chain
+            list-(top_sales/latest_stats)
+        }
+
+
+
+nft_token_attributes- -> nft_collection_attributes_latest_stats
+mkt_matched_event- -> protocol_marketplace_transactions
+chain_token_transfers - -> protocol_marketplace_transactions
+chain_token_transfers - -> chain_721_token_transfers
+token_price_5min -right-> protocol_marketplace_transactions
+protocol_marketplace_transactions - -> nft_transactions
+nft_collection_info - -> chain_721_token_transfers
+nft_collection_info - -> nft_info
+
+nft_collection_info - -> nft_transactions
+
+nft_info - -> nft_token_attributes
+chain_721_token_transfers - -> nft_transfers
+nft_transfers - -> nft_collection_transfers_daily_stats
+nft_transfers - -> marketplace_nft_collection_daily_stats
+nft_transactions - -> marketplace_nft_collection_daily_stats
+nft_collection_transfers_daily_stats - -> nft_collection_daily_stats
+marketplace_nft_collection_daily_stats - -> nft_collection_daily_stats: aggregate all marketplace
+nft_collection_daily_stats - -> nft_collection_latest_stats
+
+nft_transfers - -> nft_latest_stats
+nft_transactions - -> nft_latest_stats
+@enduml
+
+PlantUML version 1.2022.8beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
