@@ -114,7 +114,7 @@ package silver #F5F5F5 {
         nft_token_id: string
         amount_raw
         internal_index
-        transfer_type-(mint/burn/sale/transfer)
+        transfer_type-(mint/burn/transfer)
     }
     object nft_info  {
         chain
@@ -122,6 +122,10 @@ package silver #F5F5F5 {
         collection_name
         collection_slug
         image_url
+		image_thumb_url
+		image_external_url
+		animation_url
+		animation_external_url
         nft_token_id
         token_name
         mint_transaction_hash
@@ -139,6 +143,23 @@ package silver #F5F5F5 {
         metadata_uri
         attribute_key
         attribute_value
+    }
+
+    object nft_orders {
+		chain
+		collection_contract_address
+		nft_token_id
+		marketplace
+		order_id: order_id by marketplace.
+		amount
+		amount_currency
+		amount_currency_contract_address
+		order_created_at
+		order_expired_at
+		buyer_address: 'N/A' if type is 'listing'
+		seller_address: 'N/A' if type is 'offer'
+		status: 'active', 'canceled', 'expired', 'filled', 'inactive'
+		type: 'listing', 'offer'
     }
 }
 
@@ -197,8 +218,6 @@ package gold #FFECB3 {
         avg_of_platform_fees_value
         sum_of_royalty_value
         avg_of_royalty_value
-        liquidity_rate
-        market_cap
     }
 
 
@@ -247,6 +266,7 @@ package gold #FFECB3 {
         chain
         collection_contract_address
         nft_token_id
+        status-(minted/burned)
         on_date
         collection_name
         longest_hold_time-(unit:second)
@@ -305,14 +325,25 @@ package gold #FFECB3 {
             chain
             list-(top_sales/latest_stats)
         }
+    }
 
+    package tags {
+         object nft_transactions_tags {
+            transaction_hash
+            chain
+            tag_name
+            score
+        }
+    }
 
+'nft_orders -down-> nft_collection_daily_stats
 
+nft_transfers --> protocol_marketplace_transactions
 nft_token_attributes--> nft_collection_attributes_latest_stats
 mkt_matched_event--> protocol_marketplace_transactions
 chain_token_transfers --> protocol_marketplace_transactions
 chain_token_transfers --> chain_721_token_transfers
-token_price_5min -right-> protocol_marketplace_transactions
+token_price_5min -down-> protocol_marketplace_transactions
 protocol_marketplace_transactions --> nft_transactions
 nft_collection_info --> chain_721_token_transfers
 nft_collection_info --> nft_info
@@ -322,7 +353,7 @@ nft_collection_info --> nft_transactions
 nft_info --> nft_token_attributes
 chain_721_token_transfers --> nft_transfers
 nft_transfers --> nft_collection_transfers_daily_stats
-nft_transfers --> marketplace_nft_collection_daily_stats
+'nft_transfers --> marketplace_nft_collection_daily_stats
 nft_transactions --> marketplace_nft_collection_daily_stats
 nft_collection_transfers_daily_stats --> nft_collection_daily_stats
 marketplace_nft_collection_daily_stats --> nft_collection_daily_stats: aggregate all marketplace
