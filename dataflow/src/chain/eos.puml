@@ -1,0 +1,91 @@
+@startuml
+!define LIGHTBLUE
+
+skinparam linetype polyline
+skinparam linetype ortho
+
+package bronze #D7CCC8 {
+    object transactions{
+        block_hash
+        block_number
+        block_timestamp
+        hash
+        status
+        cpu_usage_us
+        net_usage_words
+        signatures
+        compression
+        packed_context_free_data
+        context_free_data
+        packed_trx
+        expiration
+        ref_block_num
+        ref_block_prefix
+        max_net_usage_words
+        max_cpu_usage_ms
+        delay_sec
+        deferred
+        action_count
+    }
+
+    object actions {
+        block_hash
+        block_number
+        block_timestamp
+        transaction_hash
+        account
+        name
+        authorization
+        authorization.owner
+        authorization.permission
+        data
+        data.key
+        data.value
+        hex_data
+        index
+    }
+}
+
+package silver #fffff1{
+    object eos_token_transfers {
+        block_hash
+        block_number
+        block_timestamp
+        from_address
+        to_address
+        log_index
+        token_address
+        transaction_hash
+        amount
+        price
+        symbol
+        amount_raw
+        decimals
+    }
+
+    object eos_transactions {
+        block_hash
+        block_number
+        block_timestamp
+        hash
+        status
+        cpu_usage_us
+        net_usage_words
+        signatures
+        compression
+        expiration
+        max_net_usage_words
+        max_cpu_usage_ms
+        delay_sec
+        deferred
+    }
+}
+
+
+
+
+
+transactions "1" --> "n" actions
+transactions "1" --> "1" eos_transactions
+actions "1" --> "1" eos_token_transfers
+@enduml
