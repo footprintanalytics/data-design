@@ -6,43 +6,43 @@ skinparam linetype ortho
 
 package bronze #D7CCC8 {
     object transactions{
-        block_hash
-        block_number
-        block_timestamp
-        hash
-        status
-        cpu_usage_us
-        net_usage_words
-        signatures
-        compression
-        packed_context_free_data
-        context_free_data
-        packed_trx
-        expiration
+        block_hash --- block的hash
+        block_number --- block数
+        block_timestamp --- block时间
+        hash --- trasactions的hash
+        status --- transactions的状态
+        cpu_usage_us --- cpu用量
+        net_usage_words --- 网络用量
+        signatures --- 签名
+        compression --- 是否压缩
+        packed_context_free_data --- 打包上下文无关数据
+        context_free_data --- 上下文无关数据
+        packed_trx --- 交易对象json转hex
+        expiration --- 到期时间
         ref_block_num
         ref_block_prefix
-        max_net_usage_words
-        max_cpu_usage_ms
-        delay_sec
-        deferred
-        action_count
+        max_net_usage_words --- 最大网络可用量
+        max_cpu_usage_ms --- 最大cpu使用量
+        delay_sec --- 计费的cpu使用单位数
+        deferred --- 是否延迟transactions的执行
+        action_count --- action的数量
     }
 
     object actions {
-        block_hash
-        block_number
-        block_timestamp
-        transaction_hash
-        account
-        name
-        authorization
-        authorization.owner
-        authorization.permission
-        data
-        data.key
-        data.value
-        hex_data
-        index
+        block_hash  --- block的hash
+        block_number --- block数
+        block_timestamp --- block的时间
+        transaction_hash --- transaction_hash
+        account --- 账户
+        name --- 相当于evm里的event
+        authorization(数组):
+        authorization.owner --- 授权人
+        authorization.permission --- 授权操作
+        data(数组)：
+        data.key --- 参数
+        data.value --- 参数对应的值
+        hex_data --- 由data encode而来
+        index --- 相当于log_index
     }
 }
 
